@@ -107,6 +107,8 @@ if(!b){
 console.groupEnd();
 
 /** 07) 논리식 Not */
+console.group("7) 논리식 Not")
+
 const x5 = true;
 const y5 = false;
 
@@ -115,10 +117,12 @@ if(!(x5 && y5)){
     console.log("!(x5 && y5) 조건은 참 입니다. ");
 }
 
-const x6 = trus;
+const x6 = true;
 const y6 = false;
 
 // true || false 는 참이지만 그 결과를 부정했으므로 결과는 거짓이 된다. -> 실행안함
 if(!(x6 || y6)){
     console.log("(!(x6 || y6) 조건은 참 입니다.")
 }
+
+console.groupEnd();
