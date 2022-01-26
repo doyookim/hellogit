@@ -13,8 +13,8 @@
 ## 2. 마크다운 사용법(문법)
 ### 2.1. 헤더Header
 
-- 큰제목: 문서 제목 This is an H1 ============= This is an H1 =============
-- 작은제목: 문서 부제목 This is an H2 ------------- This is an H2 ————-
+- 큰제목: 문서 제목 <font color="red"> `This is an H1 =============`</font> This is an H1 =============
+- 작은제목: 문서 부제목 <font color="red">`This is an H2 -------------`</font> This is an H2 ————-
 - 글머리: 1~6까지만 지원
 
 
@@ -41,7 +41,7 @@
 
 
 ### 2.2. BlockQuote
-이메일에서 사용하는 > 블럭인용문자를 이용한다.
+이메일에서 사용하는<font color="red">` >`</font>블럭인용문자를 이용한다.
 
 ```
 > This is a first blockqute.
@@ -51,7 +51,7 @@
 ```
 >This is a first blockqute. > This is a second blockqute. > > This is a third blockqute.
 
-이 안에서는 다른 마크다운 요소를 포함할 수 있다. > ### This is a H3 > * List > <font color=red>> code ></font>
+이 안에서는 다른 마크다운 요소를 포함할 수 있다. > ### This is a H3 > * List > <font color=red>`> code >`</font>
 
 ### 2.3 목록
  - **순서있는 목록(번호)**
@@ -81,7 +81,7 @@
 딱히 개선될 것 같지는 않다. 존 그루버가 신경안쓰고 있다고…
 
 
- - **순서없는 목록(글머리 기호:  ,<font color=red> +</font> , 지원)**
+ - **순서없는 목록(글머리 기호:`  `,<font color=red>` +`</font> ,` `지원)**
 
 ```
 * 빨강
@@ -156,7 +156,7 @@ This is a normal paragraph: This is a code block. end code block. *****
 #### 2.4.1. 코드블럭
 코드블럭은 다음과 같이 2가지 방식을 사용할 수 있습니다:
 
-- <font color=red>< pre> < code >{code}</ code ></ pre > </font>이용방식
+- <font color=red>`<pre><code>{code}</code ></pre>` </font>이용방식
 
 ```
 <pre>
@@ -209,7 +209,7 @@ public class BootSpringBootApplication { public static void main(String[] args) 
 ln("Hello, Honeymon"); }}
 ```
 
-### 2.5. 수평선 <font color=red>< hr/ ></font>
+### 2.5. 수평선 <font color=red>`<hr/>`</font>
 아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 페이지 나누기 용도로 많이 사용한
 다.
 ```
@@ -281,7 +281,7 @@ __double underscores__
 ![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg "Optional title")
 ```
-사이즈 조절 기능은 없기 때문에<font color=red> < img width="" height="" >< /img ></font> 를 이용한다.\
+사이즈 조절 기능은 없기 때문에<font color=red> `<img width="" height=""></img >`</font> 를 이용한다.\
 예
 ```
 <img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></im
