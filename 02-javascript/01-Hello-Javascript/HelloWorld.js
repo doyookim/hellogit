@@ -1,5 +1,5 @@
 "use strict"; //엄격모드 적용 --> ES6가 호환기능만 사용하도록 명시
-/
+
 // 메시지 그룹핑
 console.group("MyMessage1");
     console.log("안녕하세요. Javascript1");
