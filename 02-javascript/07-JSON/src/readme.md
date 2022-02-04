@@ -86,6 +86,18 @@ const 객체이름 = {
         key: value, key: value...
     } ]
 }
+
+
+const k= {
+    x : [1, 2, 3]
+}
+
+const k = {
+    x [{a:10, b:20}, {c:30, d:40}, {e:50, f:60}]
+}
+
+k.x[1].c -->30
+k.x[0].a -->10
 ```
 
 
@@ -102,3 +114,26 @@ const 객체이름 = {
 #### 빈 객체 확장하기
 
 아무런 key도 정의되지 않은 빈 json 객체에 점진적으로 내용을 덧붙여 나갈 수 있다.
+
+
+---
+
+
+어떤 주제 데이터를 설명하기 위한 보조 데이터 --> 메타데이터
+
+
+## 추가설명 
+```javascript
+const member ={
+    name: "000",
+    age: 20
+};
+```
+---
+
+member객체의 key는  name과 age이다.
+
+member라는 대상을 표현하는 특성(속성)이 name과 age \
+--> meber 객체의 속성은 name과 age이다. \
+--> meber 객체의 property은 name과 age이다.
+
