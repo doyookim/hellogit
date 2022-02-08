@@ -23,7 +23,7 @@ console.groupEnd();
 
 
 // for-of문
-console.group("일반 for문");
+console.group("for-of문");
 for (let k of bbs.item) {
     console.log("[" +k.id + "] " + k.subject);
 }
