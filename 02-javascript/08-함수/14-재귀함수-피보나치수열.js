@@ -22,5 +22,4 @@
         }
     }
 
-
     console.log(fibonacci(10));
