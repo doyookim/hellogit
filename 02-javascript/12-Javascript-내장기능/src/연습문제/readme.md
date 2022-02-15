@@ -47,3 +47,74 @@ str = "수업시간에 배운것은 수업시간에 다 이해하고 넘어가�
 ```
 3
 ```
+
+## 문제4. (로또번호 생성기 1)
+
+주어진 범위 안에서 랜덤한 숫자를 추출하는 함수는 아래와 같다.
+
+```javascript
+function random(n1, n2) {
+    return parseInt(Math.random() * (n2 - n1 + 1)) + n1;
+}
+```
+
+0개의 원소를 갖는 배열 `lotto`를 생성하고 6회의 반복을 수행하는 for문을 사용하여 배열의 각 원소를 `1~45` 사이의 범위를 갖는 임의의 숫자로 채워 넣으시오.
+
+반복이 종료되었을 때 `lotto`의 원소는 6개의 숫자가 채워져 있어야 하고 각 숫자는 중복되지 않아야 합니다.
+
+중복되지 않는 숫자를 생성하기 위해 for문 안에서 무한반복을 위한 while문을 수행해야 합니다.
+
+
+## 문제5. (로또번호 생성기 2)
+
+`1~45`사이의 범위의 1씩 증가 하는 원소가 저장되어 있는 배열 `balls`을 생성하고 6개의 빈 칸을 갖는 배열 `lotto`를 생성하시오.
+
+`lotto` 배열을 탐색하는 반복을 수행하면서 `balls` 배열에서 임의의 원소 하나를 추출하여 `lotto` 배열에 채워 넣으시오.
+
+추출된 숫자는 `balls` 배열에서는 삭제되어야 합니다.
+
+
+## 문제6.
+
+수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.
+
+마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.
+
+```javascript
+function solution(participant, completion) {
+    var answer = '';
+    return answer;
+}
+```
+
+### 제한사항
+
+- 마라톤 경기에 참여한 선수의 수는 1명 이상 100,000명 이하입니다.
+- completion의 길이는 participant의 길이보다 1 작습니다.
+- 참가자의 이름은 1개 이상 20개 이하의 알파벳 소문자로 이루어져 있습니다.
+- 참가자 중에는 동명이인이 있을 수 없습니다.
+
+### 입출력 예
+
+| participant | completion | return |
+|---|---|---|
+| ["leo", "kiki", "eden"] | ["eden", "kiki"] | "leo" |
+| ["marina", "josipa", "nikola", "vinko", "filipa"] | ["josipa", "filipa", "marina", "nikola"] | "vinko" |
+| ["mislav", "stanko", "steave", "ana"] | ["stanko", "ana", "mislav"] | "steave |
+
+```javascript
+// "leo"는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.
+// 출력결과: "leo"가 출력
+console.log(solution(["leo", "kiki", "eden"], 
+                     ["eden", "kiki"]));
+
+// "vinko"는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.
+// 출력결과: "vinko"가 출력
+console.log(solution(["marina", "josipa", "nikola", "vinko", "filipa"], 
+                     ["josipa", "filipa", "marina", "nikola"]));
+
+// "steave"는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.
+// 출력결과: "steave"가 출력
+console.log(solution(["mislav", "stanko", "steave", "ana"], 
+                     ["stanko", "ana", "mislav"]));
+```

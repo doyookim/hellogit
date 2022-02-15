@@ -29,7 +29,7 @@ const arr3 = [5, 12, 8, 131, 44];
 // 찾고자 하는 항목이 아닌 검색 규칙을 구현한 콜백함수를 전달해야 한다.
 const found = arr3.find(function(v){
     // 파라미터로 전달되는 v는 배열의 모든 원소가 순차적으로 전달된다.
-   // console.log(v);    
+    console.log(v);    
 
     // v를 우리가 원하는 조건에 충족하느지 검사하여 true/false를 리턴
     // true를 리턴하는 순간 배열의 탐색을 중단한다. (break와 동일한 기능)
