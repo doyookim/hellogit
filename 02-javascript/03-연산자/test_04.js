@@ -2,6 +2,7 @@
 
 const number = 456;
 let calcNumber01 = number % 100; 
+console.log(calcNumber01);
 let calcNuber02;
 
 if ( calcNumber01 != 0 ){
@@ -21,6 +22,11 @@ const number = 457;
 const extra = (number % 100) / 100;
 console.log(extra);
 
+const result = number / 100;
+
+console.log(result);
+
 const result = ((number / 100) - extra) * 100 ;
+
 
 console.log(result);
