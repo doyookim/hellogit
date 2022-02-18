@@ -103,12 +103,12 @@ console.log(myArr[6]);
 
 이와 관련하여 다양한 예제 패턴들이 존재한다.
 
-> 추가 설명
+> ### 추가 설명
 
 반복문을 이용하여 배열의 모든 요소를 출력해보자.
 
 
-세팅
+### 세팅
 ```javascript
 const fruits = ['apple', 'banana', 'kiwi', 'melon'];
 ```
