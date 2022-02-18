@@ -57,8 +57,8 @@ for (let i=2; i<10; i++) {
 
 // [풀이2]
 
-const number = 2;
-// const number =1;
+//const number = 2;
+ const number =1;
 
 let start = number == 2 ? 2 : 3;
 

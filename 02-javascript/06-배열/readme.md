@@ -103,7 +103,48 @@ console.log(myArr[6]);
 
 이와 관련하여 다양한 예제 패턴들이 존재한다.
 
+> 추가 설명
 
+반복문을 이용하여 배열의 모든 요소를 출력해보자.
+
+
+세팅
+```javascript
+const fruits = ['apple', 'banana', 'kiwi', 'melon'];
+```
+
+
+### for
+```javascript
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+```
+
+### for of
+```javascript
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+```
+
+### forEach
+> 배열의 값마다 내가 전달한 함수를 적용해준다.
+```javascript
+fruits.forEach(function (fruit, index, array) {
+  console.log(fruit, index, array);
+});
+```
+forEach를 사용할 때는 콜백함수를 사용하는데 콜백함수의 인자로 (값, 인덱스, 배열) 로 정의하여 사용한다.
+
+
+위 함수를 화살표 함수로 좀더 축약해보자.
+```javascript
+fruits.forEach((fruit, index) => console.log(fruit, index, array));
+```
+fruits이라는 배열의 값을 fruit에 담고 각각의 인덱스를 index에 담아서 출력한다.
+
+> 출처: https://velog.io/@younoah/JS-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B0%B0%EC%97%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC
 
 ## #02. 2차 배열
 

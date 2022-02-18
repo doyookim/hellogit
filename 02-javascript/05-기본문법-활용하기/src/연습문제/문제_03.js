@@ -1,7 +1,7 @@
 let sum = 0;
 
 for (i = 20; i > 0; i--) {
-    if( i % 2 == 0 && i % 3 == 0){
+    if( i % 2 == 0 || i % 3 == 0){
         //console.log(i);
         sum += i;
     }

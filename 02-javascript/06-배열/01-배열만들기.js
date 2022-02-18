@@ -19,3 +19,13 @@ console.log(myArr3);
 // 값이 존재하지 않는 5개의 빈 칸을 갖는 배열 만들기
 let myArr4= new Array(5);
 console.log(myArr4);
+
+
+
+const fruits = ['apple', 'banana'];
+console.log(fruits);
+console.log(fruits.length); // 2
+console.log(fruits[0]); // apple
+console.log(fruits[2]); // undefined
+console.log(fruits[1]); //  banana
+console.log(fruits[fruits.length - 1]); // banana
