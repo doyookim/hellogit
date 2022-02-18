@@ -12,3 +12,24 @@ for (let i=0; i<len; i++){
 }
 
 console.log(myArr);
+
+
+const fruits = ['apple', 'banana', 'kiwi', 'melon'];
+
+
+for (let fruit of fruits) {
+    console.log(fruit);
+  }
+
+
+const fruits = ['apple', 'banana', 'kiwi', 'melon'];
+
+fruits.forEach(function (fruit, index, array) {
+    console.log(fruit, index, array);
+  });
+
+
+//let array = new Array();
+
+const fruits = ['apple', 'banana', 'kiwi', 'melon'];  
+fruits.forEach((fruit, index, array) => console.log(fruit, index, array));

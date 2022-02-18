@@ -140,7 +140,7 @@ forEach를 사용할 때는 콜백함수를 사용하는데 콜백함수의 인�
 
 위 함수를 화살표 함수로 좀더 축약해보자.
 ```javascript
-fruits.forEach((fruit, index) => console.log(fruit, index, array));
+fruits.forEach((fruit, index, array) => console.log(fruit, index, array));
 ```
 fruits이라는 배열의 값을 fruit에 담고 각각의 인덱스를 index에 담아서 출력한다.
 
