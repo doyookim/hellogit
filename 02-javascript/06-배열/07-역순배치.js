@@ -13,16 +13,16 @@
 
 
 const data = [1, 5, 2, 4, 3];
+const data = [1, 5, 2, 4, 3, 45, 66, 8, 6, 7, 9, 54, 33, 12, 23, 34, 44, 87, 11, 14];
 console.log(data);
 
 // 반복 횟수 -> 2나누고 소수점 이하를 버린다.
 const p = parseInt(data.length/2);
 
-for (let i=0; i < p; i++) {
+for (let i=0; i < p; i++) { 
     // 반대쪽 원소의 위치
     const k = data.length -i -1;
-
-    // i번째 원소와 k번째 원소의 교화
+    // i번째 원소와 k번째 원소의 교환
     const tmp = data[i];
     data[i] = data[k];
     data[k] = tmp;

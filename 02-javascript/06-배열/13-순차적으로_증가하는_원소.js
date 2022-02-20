@@ -30,6 +30,8 @@ for (let i=0; i<data.length; i++) {
 
 console.log(data);
 
+
+
 /** 출력하기 */
 for (let i=0; i<data.length; i++) {
     let str = "";

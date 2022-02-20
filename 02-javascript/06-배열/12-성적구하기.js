@@ -27,18 +27,18 @@ for ( let i=0; i<grade.length; i++) {
 
     // i번째 행에서 0번째 열은 학생 이름이므로 합산에서 제외한다.
     for (let j=1; j<grade[i].length; j++) {
-        //console.log(grade[i][j]);
+        console.log(grade[i][j]);
         sum += grade[i][j];
         personal_sum += grade[i][j];
     }
 
 
     // 모든 학생에 대한 총점을 구하게 된다.
-    // console.log("모든 학생의 총점: %d", sum);
+     console.log("모든 학생의 총점: %d", sum);
     // 학생 개인별 총점을 구하게 된다.
     console.log("%s의 총점: %d", grade[i][0], personal_sum);
 
     // 이름은 과목수에서 제외해야 하므로 "길이-1"
     const personal_avg = personal_sum / (grade[i].length-1);
     console.log("%s의 평균: %d", grade[i][0], personal_avg);
-}
+}   
