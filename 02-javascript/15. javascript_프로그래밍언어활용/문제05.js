@@ -96,3 +96,65 @@ for (const item of grade) {
     console.log(s.getVar());
     console.log(s.getStd());
 }
+
+// 풀이 
+
+class Student{
+    constructor(){
+        this._grade = [];
+    }
+
+    set grade(v) {
+        this._grade.push(v);
+    }
+
+    getSumAvg() {
+        let sum = 0;
+        for (const i of this._grade) {
+            sum += i;
+        }
+        return [sum, sum/this._grade.length];
+    }
+
+
+    getMinMax() {
+        let min = this._grade[0];
+        let max = this._grade[0];
+
+        for (let i=0; i<this._grade.length; i++) {
+            const x = this._grade[i];
+            if (min > x) { min = x; }
+            if (max < x) { max = x; }
+        }
+        return {"min":min, "max": max };
+
+    }
+
+    getVar() {
+        const avg = this.getSumAvg()[1];
+        let dev_sum = 0;
+        for (const x of this._grade) {
+            const y = avg - x;
+            dev_sum += y * y;
+        }
+        return dev_sum / this._grade.length;
+    }
+
+    getStd() {
+        return Math.sqrt(this.getVar());
+    }
+
+}
+
+
+const student = new Student();
+student.grade = 82;
+student.grade = 76;
+student.grade = 91;
+student.grade = 98;
+student.grade = 64;
+
+console.log(student.getSumAvg());
+console.log(student.getMinMax());
+console.log(student.getVar());
+console.log(student.getStd());
