@@ -22,19 +22,19 @@ let Btype = 0;
 let ABtype = 0
 let Otype = 0;
 
-for (let i=0; i<bloodType.length; i++) {
-    if (bloodType[i] == 'A'){
+for (let i = 0; i < bloodType.length; i++) {
+    if (bloodType[i] == 'A') {
         Atype++;
-       // console.log(Atype);
-    } else if (bloodType[i] == 'B'){
+        // console.log(Atype);
+    } else if (bloodType[i] == 'B') {
         Btype++;
-       // console.log(Btype);
-    }  else if (bloodType[i] == 'AB') {
+        // console.log(Btype);
+    } else if (bloodType[i] == 'AB') {
         ABtype++;
-      //  console.log(ABtype);
+        //  console.log(ABtype);
     } else {
         Otype++;
-      //  console.log(Otype);
+        //  console.log(Otype);
     }
 
     //console.log("A:"+ Atype + "B:" + Btype + "AB:" + ABtype +"O:" + Otype);
@@ -42,7 +42,7 @@ for (let i=0; i<bloodType.length; i++) {
 
 //console.log("A:"+ Atype + " B:" + Btype + " AB:" + ABtype +" O:" + Otype);
 
-const result = {"A" : Atype, "B" : Btype, "AB" : ABtype, "O" : Otype};
+const result = { "A": Atype, "B": Btype, "AB": ABtype, "O": Otype };
 
 console.log(result);
 
@@ -85,11 +85,11 @@ console.log(result);
 // 강사님 풀이
 
 const blood_data = ['A', 'A', 'A', 'O', 'B', 'B', 'O', 'AB', 'AB', 'O'];
-const result = {"A" : 0, "B" : 0, "AB" : 0, "O" : 0};
+const result = { "A": 0, "B": 0, "AB": 0, "O": 0 };
 
-for (const b of blood_data){
-  console.log(b);
-  result[b]++;
-  
+for (const b of blood_data) {
+    //console.log(b);
+    result[b]++;
+
 }
 console.log(result);

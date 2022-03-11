@@ -5,7 +5,7 @@
 
 console.group("변수 < 최대값")
 
-for (let i = 1; i < 10; i++) {
+for (let i = 1; i < 10; i++) { // i는 1 ~ 9까지
     if (i + 1 < 10) {
         console.log(i);
     }
@@ -15,7 +15,7 @@ console.groupEnd();
 
 console.group("변수 <= 최대값")
 
-for (let i = 1; i < 9; i++) {   // i는 1~9까지
+for (let i = 1; i <= 9; i++) { // i는 1~9까지
     if (i < 9) {
         console.log(i);
     }
@@ -29,10 +29,10 @@ console.groupEnd("글자 사이에 콤마(,)넣기");
 
 let str = "";
 
-for (let i=1; i<10; i++) {
+for (let i = 1; i < 10; i++) {
     str += i;
     //console.log(str);
-    if (i+1 < 10) {
+    if (i + 1 < 10) {
         str += ",";
     }
 }
