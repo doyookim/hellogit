@@ -128,7 +128,7 @@ CDN은 콘텐츠 전송 네트워크를 의미합니다. Netflix, Amazon Video, 
 
 저희 서비스를 사용하면 비용을 절약할 수 있습니다. 저희가 귀하를 위해 모든 것을 해주기 때문에 귀하의 웹사이트 또는 애플리케이션이 계속 작동하기 위해 IT 기술자 군대가 필요하지 않습니다. 웹 트래픽은 사용자 경험의 품질을 향상시킬 방법을 찾고 있습니다. 이를 수행하는 한 가지 방법은 스트리밍에서 CDN 평균을 사용하는 것입니다.
 
->https://library.gabia.com/contents/infrahosting/8985/
+>https://library.gabia.com/contents/infrahosting/8985/   
 >https://www.websiterating.com/ko/web-hosting/glossary/what-is-cdn/
 
 
