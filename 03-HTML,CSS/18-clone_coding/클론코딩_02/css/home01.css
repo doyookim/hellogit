@@ -1,0 +1,322 @@
+/* 공통 */
+
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: inherit
+}
+
+b {
+    font-weight: bolder
+}
+
+button,
+input {
+    font: inherit;
+    margin: 0;
+    overflow: visible;
+}
+
+button {
+    text-transform: none;
+}
+
+
+/* 공통 부분 끝*/
+
+
+/* 공통 클래스 */
+
+.common-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.common-wide {
+    letter-spacing: 4px
+}
+
+.common-margin-bottom {
+    margin-bottom: 16px!important
+}
+
+.common-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.common-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.common-button:hover {
+    color: #000!important;
+    background-color: #ccc!important
+}
+
+@media (max-width:600px) {
+    .hide-small {
+        display: none!important
+    }
+}
+
+.common-display-container {
+    position: relative
+}
+
+.common-display-container:hover .common-display-hover {
+    display: block
+}
+
+.common-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+}
+
+.common-image {
+    max-width: 100%;
+    height: auto
+}
+
+.common-center {
+    text-align: center!important
+}
+
+.common-black,
+.common-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important
+}
+
+.common-border-light-grey,
+.common-hover-border-light-grey:hover,
+.common-border-light-gray,
+.common-hover-border-light-gray:hover {
+    border-color: #f1f1f1!important
+}
+
+.common-col {
+    float: left;
+    width: 100%;
+    padding: 0 8px;
+}
+
+@media (min-width:601px) {
+    .common-col.m6 {
+        width: 49.99999%
+    }
+}
+
+@media (min-width:993px) {
+    .common-col.l3 {
+        width: 24.99999%
+    }
+}
+
+.common-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.common-opacity,
+.common-hover-opacity:hover {
+    opacity: 0.60;
+}
+
+.common-light-grey,
+.common-hover-light-grey:hover,
+.common-light-gray,
+.common-hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f1f1f1!important
+}
+
+.common-block {
+    display: block;
+    width: 100%
+}
+
+.common-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.common-border {
+    border: 1px solid #ccc!important
+}
+
+.common-section {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important
+}
+
+.common-border-bottom {
+    border-bottom: 1px solid #ccc!important
+}
+
+.common-container:after,
+.common-container:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.common-cotainer {
+    padding: 0.01em 16px;
+}
+
+.common-padding-16 {
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+}
+
+.common-padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+}
+
+.common-row-padding,
+.common-row-padding:after,
+.common-row-padding:before {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 0 8px;
+}
+
+.common-padding {
+    padding: 8px 16px!important;
+}
+
+
+/* 공통 클래스 끝 */
+
+.top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+.white,
+.hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important
+}
+
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.right {
+    float: right!important;
+    text-align: right!important;
+}
+
+.header-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    margin-top: 16px!important;
+}
+
+.header-h1-white,
+.hover-text-h1-white:hover {
+    font-size: 36px!important;
+    color: #fff!important;
+}
+
+.header-text-light-grey,
+.header-hover-text-light-grey:hover {
+    color: #f1f1f1!important
+}
+
+.footer-text-green,
+.footer-hover-text-green:hover {
+    color: #4CAF50!important
+}

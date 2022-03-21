@@ -55,7 +55,7 @@ const z = h.x + h.y; // 5 + 10
 
 #### 하나의 생성자를 통해 동일한 구조를 갖는 객체를 여러개 생성한 예
 
-![game.jpg](res/game.png)
+![game.jpg](src/res/game.png)
 
 ### 3) 파라미터를 갖는 생성자
 

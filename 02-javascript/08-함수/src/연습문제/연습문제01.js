@@ -25,23 +25,33 @@
 function printStar(max) {
     var star = "";
 
-    for (let i=0; i<max; i++){
+    for (let i = 0; i < max; i++) {
 
-            star += "*";
-            console.log(star);
-        
+        star += "*";
+        console.log(star);
+
     }
 
 }
 
 printStar(5);
 
+// 강사님풀이
+
 
 function printStar(max) {
-    
+
     // 반복문이 중첩되었을 때 바깥의 반복문은 행을 의미
     // max는 행의 수를 의미하므로 바깥 반복문의 조건식에서 활용해야 한다.
-    for (let i=0; i<max; )
+    for (let i = 0; i < max; i++) {
+        let star = "";
+
+        for (let j = 0; j < i + 1; j++) {
+            star += "*";
+        }
+
+        console.log(star)
+    }
 }
 
 
