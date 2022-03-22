@@ -1,12 +1,11 @@
 {
-    "editor.formatOnSave": true,
-    "liveSassCompile.settings.autoprefix": [],
-    "liveSassCompile.settings.formats": [
-        {
-            "extensionName": ".min.css",
-            "format": "compressed",
-            "savePath": "~/../css"
-        }
-    ],
+  "editor.formatOnSave": true,
+  "liveSassCompile.settings.autoprefix": [],
+  "liveSassCompile.settings.formats": [
+    {
+      "extensionName": ".min.css",
+      "format": "compressed",
+      "savePath": "~/../css"
+    }
+  ]
 }
-

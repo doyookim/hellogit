@@ -1,0 +1,2 @@
+값이 있는 속성 : attribute
+값이 없는 속성 : property 
