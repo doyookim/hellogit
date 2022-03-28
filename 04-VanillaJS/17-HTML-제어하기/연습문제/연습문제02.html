@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+
+    <style>
+        .event-box {
+            border: 2px solid black;
+            background: #d5d5d5;
+            color: blue;
+            font-size: 15x;
+            text-align: center;
+            cursor: pointer;
+            width: 110px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="listener" class="event-box"><b>푸시알림 수신</b></div>
+
+    <script>
+        function click_on() {
+            document.querySelector('#listener').addEventListener('click', (e) => document.getElementById('listener').style.color = '#ff0000');
+            document.querySelector('#listener').addEventListener('click', (e) => document.getElementById('listener').style.backgroundColor = '#ff0');
+        }
+
+        function click_off() {
+            document.querySelector('#listener').addEventListener(" dblclick ", (e) =>
+                document.getElementById('listener').style.color = '#0000ff;');
+            document.querySelector('#listener').addEventListener("dblclick ", (e) =>
+                document.getElementById('listener').style.backgroundColor = '#d5d5d5;');
+        }
+
+        click_on();
+        click_off();
+    </script>
+</body>
+</head>
+
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+강사님 풀이
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+    <style>
+        .push_noti_on {
+            border: 1px solid #333;
+            padding: 5px 10px;
+            background-color: #ffff00;
+            color: red;
+        }
+        
+        .push_noti_off {
+            border: 1px solid #333;
+            padding: 5px 10px;
+            background-color: #d5d5d5;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="pushBtn" class="push_noti_off">푸시알림 수신</button>
+
+    <script>
+        document.querySelector("#pushBtn").addEventListener('click', (e) => {
+            const current = e.currentTarget;
+            current.classList.toggle('push_noti_on');
+            current.classList.toggle('push_noti_off');
+        });
+    </script>
+</body>
+</head>
+
+</html> -->

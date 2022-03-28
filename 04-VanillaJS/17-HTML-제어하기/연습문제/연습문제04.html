@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <h1 id="pre_time" />
+                </td>
+                <td>~</td>
+                <td>
+                    <h1 id="current_time" />
+                </td>
+            </tr>
+        </table>
+
+        <input type="button" id="btn1" value="1일" />
+        <input type="button" id="btn2" value="7일" />
+        <input type="button" id="btn3" value="15일" />
+        <input type="button" id="btn4" value="30일" />
+        <input type="button" id="btn5" value="60일" />
+    </div>
+
+    <script>
+        function today() {
+            const current_time = document.getElementById('current_time');
+            const pre_time = document.getElementById('pre_time');
+            var today = new Date();
+            var year = today.getFullYear();
+            var month = today.getMonth();
+            var date = today.getDate();
+            var day = today.getDay();
+
+
+
+            current_time.innerHTML = year + "-" + (month + 1) + "-" + date;
+            pre_time.innerHTML = year + "-" + (month + 1) + "-" + date;
+
+        }
+
+        today();
+
+        var today = new Date();
+        var year = today.getFullYear();
+        var month = today.getMonth();
+        var date = today.getDate();
+        var day = today.getDay();
+
+        console.log(today - (24 * 60 * 60));
+
+        document.querySelector("#btn1").addEventListener('click', (e) => document.getElementById('pre_time').innerHTML = year + "-" + (month + 1) + "-" + (date - 1));
+        document.querySelector("#btn2").addEventListener('click', (e) => document.getElementById('pre_time').innerHTML = year + "-" + (month + 1) + "-" + (date - 7));
+        document.querySelector("#btn3").addEventListener('click', (e) => document.getElementById('pre_time').innerHTML = year + "-" + (month + 1) + "-" + (date - 15));
+        document.querySelector("#btn4").addEventListener('click', (e) => document.getElementById('pre_time').innerHTML = year + "-" + (month + 1) + "-" + (date - 30));
+        document.querySelector("#btn5").addEventListener('click', (e) => document.getElementById('pre_time').innerHTML = year + "-" + (month + 1) + "-" + (date - 60));
+    </script>
+</body>
+</head>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><span id="s_date"></span> ~<span id="e_date"></span> </h1>
+    <input type="button" id="btn1" value="1일" />
+    <input type="button" id="btn2" value="7일" />
+    <input type="button" id="btn3" value="15일" />
+    <input type="button" id="btn4" value="30일" />
+    <input type="button" id="btn5" value="60일" />
+
+    <script type="text/javascript">
+        function setTerm(days) {
+            var today = new Date();
+            var start_date = new Date();
+
+            // 당일을 포함해야 하므로 주어진 날짜수에서 1을 뺴야한다.
+            start_date.setDate(start_date.getDate() - (days - 1));
+
+            document.getElementById('s_date').innerHTML = start_date.getFullYear() + '-' + (start_date.getMonth() + 1) + '-' + start_date.getDate();
+
+            document.getElementById('e_date').innerHTML = today.getFullYear() + '-' + (today.getMonth)
+        }
+    </script>
+</body>
+</head>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="current_time"></h1>
+    </div>
+
+    <script>
+        function today() {
+            const current_time = document.getElementById('current_time');
+            var today = new Date();
+            var year = today.getFullYear();
+            var month = today.getMonth() + 1;
+            var date = today.getDate();
+            var day = today.getDay();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var seconds = today.getSeconds();
+
+
+            if (month < 10) {
+                month = '0' + month;
+            }
+
+            if (date < 10) {
+                date = '0' + date;
+            }
+
+            if (hours < 10) {
+                hours = '0' + hours;
+            }
+
+            if (minutes < 10) {
+                minutes = '0' + minutes;
+            }
+
+            if (seconds < 10) {
+                seconds = '0' + seconds;
+            }
+
+
+
+            current_time.innerHTML = year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
+
+        }
+
+        function init() {
+
+            today();
+            setInterval(today, 1000);
+        }
+
+        init();
+    </script>
+</body>
+</head>
+
+</html>
+
+
+<!-- 강사님 풀이 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="time"></h1>
+
+    <script>
+        setInterval(() => {
+            const date = new Date();
+            let yy = date.getFullYear();
+            let mm = date.getMonth() + 1;
+            let dd = date.getDate();
+            let hh = date.getHours();
+            let mi = date.getMinutes();
+            let ss = date.getSeconds();
+
+            if (mm < 10) {
+                mm = '0' + mm;
+            }
+
+            if (dd < 10) {
+                dd = '0' + dd;
+            }
+
+             if (hh < 10) {
+                hh = '0' + hh;
+            }
+
+            if (mi < 10) {
+                mi = '0' + mi;
+            }
+
+            if (ss < 10) {
+                ss = '0' + ss;
+            }
+
+            document.getElementById('time').innerHTML = `${yy}-${mm}-${dd} ${hh}:${mi}:${ss}`;
+        }, 1000);
+    </script>
+</body>
+</head>
+
+</html>
+-->

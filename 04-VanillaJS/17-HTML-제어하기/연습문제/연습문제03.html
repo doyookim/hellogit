@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .slide1 {
+            width: 150px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div>
+        <img class="slide1" src="../img/01.gif">
+        <img class="slide1" src="../img/02.gif">
+        <img class="slide1" src="../img/03.gif">
+    </div>
+
+    <script>
+        var index = 0;
+        window.onload = function() {
+            slideShow();
+        }
+
+        function slideShow() {
+            var i;
+            var x = document.getElementsByClassName("slide1");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            index++;
+            if (index > x.length) {
+                index = 1;
+            }
+            x[index - 1].style.display = "block";
+            setTimeout(slideShow, 3000);
+
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- 강사님 풀이 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="../img/01.gif" id="lyan" width="480" height="480" />
+
+    <script>
+        const img = ['01.gif', '02.gif', '03.gif'];
+        let num = 0;
+
+        setInterval(function() {
+            num = (mun + 1) % img.length;
+            document.getElementById('lyan').setAttribute("src", img[num]);
+        }, 3000);
+    </script>
+</body>
+</head>
+
+</html>
+-->
