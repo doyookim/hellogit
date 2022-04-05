@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>async ~ await 방식으로 axios를 활용한 다중행 조회</title>
+    <style>
+        #loading {
+            width: 100px;
+            height: 100px;
+            background-image: url(img/loading.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+            z-index: 9999999;
+            display: none;
+        }
+        
+        #loading.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading"></div>
+    <h1>일별 영화 관람 조회</h1>
+
+    <button id="btn" type="button">데이터 가져오기</button>
+
+    <hr />
+    <div>
+        <select name="yy" id="year" class="sel_ch"></select>년
+        <select name="mm" id="month" class="sel_ch"></select>월
+        <select name="dd" id="day" class="sel_ch"></select>일
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>순위</th>
+                <!-- rank -->
+                <th>영화제목</th>
+                <!-- movieNm	-->
+                <th>개봉일</th>
+                <!-- openDt -->
+                <th>관객수</th>
+                <!-- audiCnt-->
+            </tr>
+        </thead>
+        <tbody id="list-body"></tbody>
+    </table>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var now = new Date();
+            var year = now.getFullYear();
+            var mon = (now.getMonth() + 1) > 9 ? '' + (now.getMonth() + 1) : '0' + (now.getMonth() + 1);
+            var day = (now.getDate()) > 9 ? '' + (now.getDate()) : '0' + (now.getDate() - 1); //년도 selectbox만들기 
+            for (var i = 1900; i <= year; i++) {
+                $('#year').append('<option value="' + i + '">' + i + '년</option>');
+            }
+            // 월별 selectbox 만들기 
+            for (var i = 1; i <= 12; i++) {
+                var mm = i > 9 ? i : "0" + i;
+                $('#month').append('<option value="' + mm + '">' + mm + '월</option>');
+            }
+            // 일별 selectbox 만들기 
+            for (var i = 1; i <= 31; i++) {
+                var dd = i > 9 ? i : "0" + i;
+                $('#day').append('<option value="' + dd + '">' + dd + '일</option>');
+            }
+            $("#year > option[value=" + year + "]").attr("selected", "true");
+            $("#month > option[value=" + mon + "]").attr("selected", "true");
+            $("#day > option[value=" + day + "]").attr("selected", "true");
+
+            const sel_date = year + mon + day;
+            console.log(sel_date);
+
+
+
+
+            document.querySelector(".sel_ch").addEventListener("change", e => {
+                e.preventDefault();
+                $("#year > option[value=" + year + "]").attr("selected", "true");
+                $("#month > option[value=" + mon + "]").attr("selected", "true");
+                $("#day > option[value=" + day + "]").attr("selected", "true");
+
+                const sel_date = year + mon + day;
+                console.log(sel_date);
+
+            });
+
+
+            document.querySelector("#btn").addEventListener("click", async(e) => {
+                e.preventDefault();
+                // 로딩바 표시하기
+                const loading = document.querySelector("#loading");
+                loading.classList.add('active');
+
+
+                let json = null;
+
+                try {
+                    json = await axios.get('http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=3c6bb50f15d988001490a0405200e193&targetDt=' + sel_date);
+                    console.log(json);
+                } catch (e) {
+                    console.error(e);
+                    console.error(e.response.status);
+                    console.error(e.response.statusText);
+                    console.error(e.response.data);
+                    alert(e.response.statusText);
+                } finally {
+                    // 로딩바 닫기
+                    loading.classList.remove('active');
+                }
+
+                if (json != null) {
+
+                    const listBody = document.querySelector("#list-body");
+
+                    json.data.boxOfficeResult.dailyBoxOfficeList.map((v, i) => {
+                        const tr = document.createElement('tr');
+
+                        const td1 = document.createElement('td');
+                        td1.innerHTML = v.rank;
+
+                        const td2 = document.createElement('td');
+                        td2.innerHTML = v.movieNm;
+
+                        const td3 = document.createElement('td');
+                        td3.innerHTML = v.openDt;
+
+                        const td4 = document.createElement('td');
+                        td4.innerHTML = v.audiCnt;
+
+
+
+                        tr.appendChild(td1);
+                        tr.appendChild(td2);
+                        tr.appendChild(td3);
+                        tr.appendChild(td4);
+
+                        listBody.appendChild(tr);
+
+                    });
+
+                }
+
+            }); // end btn event
+
+
+
+        })
+    </script>
+
+
+</body>
+</head>
+
+</html>
+
+
+
+
+            $("#year").change(function() {
+
+                var year = $(this).val().toString();
+                console.log("year:" + year);
+
+
+            });
+
+            $("#month").change(function() {
+
+                month = $(this).val().toString();
+                console.log("month:" + month);
+
+
+            });
+
+            $("#day").change(function() {
+
+                day = $(this).val().toString();
+                console.log("day:" + day);
+
+
+            });
+
+
+
+             const yy = datetime.substring(0, 4);
+                    console.log(yy);
+                    const mon = datetime.substring(5, 7);
+
+
+                    console.log(mon);
+                    const dd = datetime.substring(8, 10);
+
+
+
+                    const hh = datetime.substring(11, 13);
+                    console.log(hh);
+
+                    const mm = datetime.substring(14, 16);
+                    console.log(mm);
+                    const ss = datetime.substring(17, 19);
+                    console.log(ss);
+
+                    const span2 = document.createElement('span');
+                    span2.innerHTML = yy + "." + mon + "." + dd + "." + hh + ":" + mm + ":" + ss;

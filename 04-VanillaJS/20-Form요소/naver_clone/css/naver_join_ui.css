@@ -1,0 +1,55 @@
+/*
+ * @filename : naver_join_ui.css
+ * @author : 김도유(jeje_k@naver.com)
+ * @description : 회원가입 CSS
+ */
+
+@charset "UTF-8";
+
+/* 참조 : https://nid.naver.com/inc/user/css/V2Join.css?20210420 */
+
+@font-face {
+    font-family: NanumSquareL;
+    font-weight: 400;
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareL.eot);
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareL.eot?#iefix) format("embedded-opentype");
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareL.woff2) format("woff2"), url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareL.woff) format("woff"), url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareL.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: NanumSquareR;
+    font-weight: 400;
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareR.eot);
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareR.eot?#iefix) format("embedded-opentype");
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareR.woff2) format("woff2"), url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareR.woff) format("woff"), url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareR.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: NanumSquareB;
+    font-weight: 400;
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareB.eot);
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareB.eot?#iefix) format("embedded-opentype");
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareB.woff2) format("woff2"), url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareB.woff) format("woff"), url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareB.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: NanumSquareEB;
+    font-weight: 400;
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareEB.eot);
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareEB.eot?#iefix) format("embedded-opentype");
+    src: url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareEB.woff2) format("woff2"), url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareEB.woff) format("woff"), url(https://ssl.pstatic.net/static/nid/webfont/NanumSquareEB.ttf) format("truetype");
+}
+
+#header {
+    padding: 60px 0 54px;
+    padding-bottom: 20px;
+    width: 240px;
+    height: 44px;
+    background-image: url(../img/naver_logo.png);
+}
+
+#header .logo {
+    width: 240px;
+    height: 44px;
+    background-image: url(../img/naver_logo.png);
+}

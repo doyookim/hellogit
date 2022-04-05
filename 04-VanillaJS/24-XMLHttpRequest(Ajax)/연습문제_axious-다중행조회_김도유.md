@@ -1,0 +1,242 @@
+# 김도유 axios-다중행조회 연습문제
+
+> 2022-04-04
+
+## 문제1 ex1) promise 방식으로 axios를 활용한 다중행 조회
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>promise 방식으로 axios를 활용한 다중행 조회</title>
+    <style>
+        #loading {
+            width: 100px;
+            height: 100px;
+            background-image: url(img/loading.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+            z-index: 9999999;
+            display: none;
+        }
+
+        #loading.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading"></div>
+    <h1>promise 방식으로 axios를 활용한 다중행 조회</h1>
+
+    <button id="btn" type="button">데이터 가져오기</button>
+
+    <hr />
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>학과번호</th>
+                <th>학과명</th>
+                <th>학과위치</th>
+            </tr>
+        </thead>
+        <tbody id="list-body"></tbody>
+    </table>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.querySelector("#btn").addEventListener("click", (e) => {
+            // 로딩바 표시하기
+            const loading = document.querySelector("#loading");
+            loading.classList.add('active');
+
+            const listBody = document.querySelector("#list-body");
+
+            axios
+                .get(`http://localhost:3000/department/`)
+                .then(({
+                    data
+                }) => {
+
+                    console.log(data);
+
+
+
+                    if (data != null) {
+                        data.map((v, i) => {
+                            const tr = document.createElement('tr');
+
+                            const td1 = document.createElement('td');
+                            td1.innerHTML = v.id;
+
+                            const td2 = document.createElement('td');
+                            td2.innerHTML = v.dname;
+
+                            const td3 = document.createElement('td');
+                            td3.innerHTML = v.loc;
+
+                            tr.appendChild(td1);
+                            tr.appendChild(td2);
+                            tr.appendChild(td3);
+
+                            listBody.appendChild(tr);
+                        });
+
+                    }
+
+                })
+                .catch((error) => {
+                    cconsole.error(error);
+                    console.error(error.response.status);
+                    console.error(error.response.statusText);
+                    console.error(error.response.data);
+                    alert(error.response.statusText);
+                })
+                .finally(() => {
+                    // 성공, 실패 여부에 상관없이 마지막에 실행되는 함수
+                    loading.classList.remove('active')
+                });
+
+
+
+        });
+    </script>
+</body>
+</head>
+</html>
+```
+
+![ex1](image/ex_01_01.jpg)
+
+## 문제1 ex1) promise 방식으로 axios를 활용한 다중행 조회
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>async ~ await 방식으로 axios를 활용한 다중행 조회</title>
+    <style>
+        #loading {
+            width: 100px;
+            height: 100px;
+            background-image: url(img/loading.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+            z-index: 9999999;
+            display: none;
+        }
+
+        #loading.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading"></div>
+    <h1>async ~ await 방식으로 axios를 활용한 다중행 조회</h1>
+
+    <button id="btn" type="button">데이터 가져오기</button>
+
+    <hr />
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>학과번호</th>
+                <th>학과명</th>
+                <th>학과위치</th>
+            </tr>
+        </thead>
+        <tbody id="list-body"></tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.querySelector("#btn").addEventListener("click", async(e) => {
+            // 로딩바 표시하기
+            const loading = document.querySelector("#loading");
+            loading.classList.add('active');
+
+
+            let json = null;
+
+            try {
+                json = await axios.get(`http://localhost:3000/department`);
+                console.log(json);
+            } catch (e) {
+                console.error(e);
+                console.error(e.response.status);
+                console.error(e.response.statusText);
+                console.error(e.response.data);
+                alert(e.response.statusText);
+            } finally {
+                // 로딩바 닫기
+                loading.classList.remove('active');
+            }
+
+            if (json != null) {
+
+                const {
+                    id,
+                    dname,
+                    loc
+                } = json.data;
+                const listBody = document.querySelector("#list-body");
+
+                json.data.map((v, i) => {
+                    const tr = document.createElement('tr');
+
+                    const td1 = document.createElement('td');
+                    td1.innerHTML = v.id;
+
+                    const td2 = document.createElement('td');
+                    td2.innerHTML = v.dname;
+
+                    const td3 = document.createElement('td');
+                    td3.innerHTML = v.loc;
+
+                    tr.appendChild(td1);
+                    tr.appendChild(td2);
+                    tr.appendChild(td3);
+
+                    listBody.appendChild(tr);
+
+                });
+
+            }
+
+        });
+    </script>
+
+
+</body>
+</head>
+
+</html>
+```
+
+![ex2](image/ex_02_01.jpg)

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>MediaBox 라이트박스 플러그인</title>
+</head>
+
+<body>
+    <h1>MediaBox 라이트박스 플러그인</h1>
+    <p>
+        <a href="https://github.com/pinceladasdaweb/mediabox">https://github.com/pinceladasdaweb/mediabox</a>
+    </p>
+
+    <hr />
+    <div class="translated-ltr">
+        <a href="https://www.youtube.com/watch?v=jANE8lpoj2c" class="mediabox">
+            <!-- 동영상 배경썸네일(480x360): https://img.youtube.com/vi/jANE8lpoj2c/0.jpg -->
+            <!-- 동영상 시작지점 썸네일(120x90): https://img.youtube.com/vi/jANE8lpoj2c/1.jpg -->
+            <!-- 동영상 중간지점 썸네일(120x90): https://img.youtube.com/vi/jANE8lpoj2c/2.jpg -->
+            <!-- 동영상 끝지점 썸네일(120x90): https://img.youtube.com/vi/jANE8lpoj2c/3.jpg -->
+            <!-- 고해상도 썸네일(1280x720): https://img.youtube.com/vi/jANE8lpoj2c/maxresdefault.jpg -->
+            <!-- 중간해상도 썸네일(640X480): https://img.youtube.com/vi/jANE8lpoj2c/sddefault.jpg -->
+            <!-- 고품질 썸네일(480x360): https://img.youtube.com/vi/jANE8lpoj2c/hqdefault.jpg -->
+            <!-- 중간품질 썸네일(320x180): https://img.youtube.com/vi/jANE8lpoj2c/mqdefault.jpg -->
+            <!-- 보통품질 썸네일(120x90): https://img.youtube.com/vi/jANE8lpoj2c/default.jpg -->
+            <img src="https://img.youtube.com/vi/jANE8lpoj2c/default.jpg" />
+            <img src="https://img.youtube.com/vi/jANE8lpoj2c/2.jpg" />
+            <img src="https://img.youtube.com/vi/jANE8lpoj2c/maxresdefault.jpg" />
+            <img src="https://img.youtube.com/vi/jANE8lpoj2c/hqdefault.jpg " />
+
+
+        </a>
+    </div>
+
+    <script type="text/javascript" src="mediabox-master/dist/mediabox.js"></script>
+    <script type="text/javascript">
+        // Youtube 영상 주소를 갖는 링크에 대한  CSS 선택자를 파라미터로 전달하여 플러그인 함수 호출
+        MediaBox('.mediabox');
+    </script>
+</body>
+</head>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+    <style>
+        .subplot {
+            float: left;
+            width: 33.3%;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        
+        .subplot-item {
+            width: auto;
+            height: 320px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="subplot">
+        <h2>학년에 따른 평균 나이 변화</h2>
+        <div class="subplot-item">
+            <canvas id="mychart1"></canvas>
+        </div>
+    </div>
+    <script src="dataset.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script>
+        const grade_info = [];
+        const birthdate_info = [];
+        var date = new Date();
+        var year = date.getFullYear();
+        for (let i = 0; i < student.length; i++) {
+            grade_info[i] = student[i].grade;
+            birthdate_info[i] = year - (student[i].birthdate.substr(0, 4)) + 1;
+        }
+        console.log(grade_info);
+        console.log(birthdate_info);
+
+        const age_info = new Map();
+        age_info.set(grade_info, birthdate_info);
+        console.log(age_info);
+
+
+
+        /*
+        const grade = [];
+        grade_info.forEach((val, idx, arr) => {
+            grade.push(grade_info[idx] = val + "학년:" + birthdate_info[idx]);
+
+        })
+        console.log(grade);
+        */
+    </script>
+
+
+
+
+</body>
+</head>
+
+</html>

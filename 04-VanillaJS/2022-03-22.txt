@@ -1,2 +1,24 @@
 값이 있는 속성 : attribute
 값이 없는 속성 : property 
+
+
+
+
+/** 09 21 */ 152 
+regexHelper.value( 'Huser_name', '0 Q 2619.'); 153
+regexHelper.minLength('#user_name', 2, '05. |1 21 olas gla 75 LICH.'); 154
+regexHelper.maxLength('#user_name', 20, '0. TCH 201 77124 93 75 LICH.'); 155
+regexHelper.kor('#user_name', '03 2. 212 75 LICH. '); 156
+/** 0019 F */ 158
+regexHelper.value ('Hemail', '0029 0264|19. '); 159
+regexHelper.email('#email', '0012 71 ALICH. '); 160 161
+/** oletā 21 */ 162
+regexHelper.value ('#tel', 'Oleta 22 19. '); 163
+regexHelper.phone('#tel', 'OPERIJ E ELICH. '); 164 165
+/** 2 */ 166
+regexHelper.check('input[name=gender]', '99 45H1l|2.'); 167 168
+/** ** 23 21 */ 169
+regexHelper.check('input[name=subject]', '19) H49.'); 170
+regexHelper.checkMin('input[name=subject]', 2, '75. 27 Oct 16H10 Z LICH.'); 171
+regexHelper.checkMax('input[name=subject]', 3, '78. CH 3777777| YEH 757L1Ct. '); 172
+
