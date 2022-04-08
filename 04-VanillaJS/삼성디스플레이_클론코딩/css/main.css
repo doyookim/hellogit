@@ -1,0 +1,749 @@
+@charset "utf-8";
+br.t_pc_only {
+    display: none;
+}
+
+.kv_wrap {
+    position: relative;
+    /* height: 34.89vw; */
+    height: 34.584vw;
+}
+
+.kv_wrap .kv_color {
+    float: left;
+    width: 16.67%;
+    height: 100%;
+}
+
+.kv_wrap .kv_color ul,
+.kv_wrap .kv_color li {
+    height: 100%;
+}
+
+.kv_wrap .kv_cont {
+    float: right;
+    position: relative;
+    width: 83.33%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.kv_wrap .kv_img {
+    height: 100%;
+}
+
+.kv_wrap .kv_img a,
+.kv_wrap .kv_img div {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.kv_wrap .kv_img li {
+    display: none;
+    height: 100%;
+}
+
+.kv_wrap .kv_img li:nth-child(1) {
+    display: block;
+}
+
+.kv_wrap .kv_img li:nth-child(1) a {
+    background-image: url("../images/kv-01.jpg");
+}
+
+.kv_wrap .kv_img li:nth-child(2) a {
+    background-image: url("../images/main_OLED.jpg");
+}
+
+.kv_wrap .kv_img li:nth-child(3) a {
+    background-image: url("../images/kv-02.jpg");
+}
+
+.kv_wrap .kv_img li:nth-child(4) a {
+    background-image: url("../images/kv-03_1.jpg");
+}
+
+.kv_wrap .kv_img li:nth-child(5) a {
+    background-image: url("../images/kv-04_1.jpg");
+}
+
+.kv_wrap .kv_txt {
+    position: absolute;
+    top: 50%;
+    left: 3.91%;
+    /* width: 29.15%; */
+    width: 34.15%;
+    color: #fff;
+    transform: translateY(-50%);
+    transition: color 0.5s linear;
+    pointer-events: none;
+    height: 100%;
+    overflow: visible;
+}
+
+.kv_wrap .kv_txt h2 {
+    font-size: 2.86vw;
+    line-height: 1.18;
+}
+
+.kv_wrap .kv_txt p {
+    margin-top: 0.63vw;
+    font-size: 1.042vw;
+    line-height: 1.5;
+    padding-left: 0.1vw;
+}
+
+.kv_wrap .kv_btn {
+    position: absolute;
+    bottom: 0;
+    left: 16.67%;
+}
+
+.kv_wrap .kv_btn button {
+    float: left;
+    width: 3.66vw;
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    border-width: 0 0 1px 1px;
+}
+
+.kv_wrap .kv_btn button span {
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    background: no-repeat center/100% auto;
+}
+
+.kv_wrap .kv_btn p {
+    float: left;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.83vw;
+    line-height: 3.65vw;
+    padding: 0 1.56vw;
+    transition: color 0.5s linear;
+}
+
+.kv_wrap .kv_btn p .current {
+    color: #fff;
+    transition: color 0.5s linear;
+}
+
+.kv_wrap .kv_btn .play {
+    position: absolute;
+    padding: 0.36vw;
+    width: 1.82vw;
+    height: 1.82vw;
+    left: 11.67vw;
+    bottom: 0.89vw;
+    background-color: transparent;
+    border: none;
+}
+
+.kv_wrap .kv_btn .play span {
+    background: url("../images/kv_pause.png") no-repeat center/1.09vw 1.09vw;
+}
+
+.kv_wrap .kv_btn .play.paused span {
+    background-image: url("../images/kv_play.png");
+}
+
+.kv_wrap .kv_btn .prev span {
+    background-image: url("../images/kv_prev.png");
+}
+
+.kv_wrap .kv_btn .next span {
+    background-image: url("../images/kv_next.png");
+}
+
+.kv_wrap .kv_link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 6.35vw;
+    padding-top: 4.32vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateX(100%) rotate(90deg);
+    transform-origin: top left;
+    transition: background 0.5s linear;
+}
+
+.kv_wrap .kv_link p {
+    color: #fff;
+    font-size: 0.94vw;
+    transition: color 0.5s linear;
+    font-size: 0.78vw;
+    font-weight: 600;
+}
+
+.kv_wrap .kv_link p+p {
+    margin-left: 3.91vw;
+}
+
+.kv_wrap .kv_link .arrow {
+    display: inline-block;
+    width: 1.56vw;
+    height: 0.36vw;
+    margin-left: 0.73vw;
+    background: url("../images/arrow_news_letter_white.png") no-repeat right/auto 100%;
+    vertical-align: baseline;
+    transition: background 0.5s linear;
+}
+
+.kv_wrap.theme_black {}
+
+.kv_wrap.theme_black .kv_txt {
+    color: #000;
+}
+
+.kv_wrap.theme_black .kv_btn p {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.kv_wrap.theme_black .kv_btn p .current {
+    color: #000;
+}
+
+.kv_wrap.theme_black .kv_link {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.kv_wrap.theme_black .kv_link p {
+    color: #000;
+}
+
+.kv_wrap.theme_black .kv_link .arrow {
+    background-image: url("../images/arrow_news_letter_black.png");
+}
+
+.kv_wrap.theme_black_s .kv_txt {
+    color: #000;
+}
+
+.kv_wrap .kv_link p a .ssfont {
+    font-weight: normal;
+}
+
+.about_wrap {
+    height: 14.58vw;
+}
+
+.about_wrap>div {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.about_wrap ul {
+    height: 100%;
+}
+
+.about_wrap li {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+.about_wrap a {
+    position: relative;
+    height: 100%;
+    padding: 16.88% 21.88% 16.88% 10.63%;
+}
+
+.about_wrap h2 {
+    font: bold 1.41vw/1.48 "SamsungSharpSans", "SamsungOneKorean";
+}
+
+.about_wrap p {
+    font-size: 0.79vw;
+    line-height: 1.6;
+    margin-top: 0.16vw;
+}
+
+.about_wrap .company li:first-child {
+    background-color: #d0dee8;
+}
+
+.about_wrap .company li:nth-child(2) {
+    background-color: #e5edf3;
+}
+
+.about_wrap .company li:last-child {
+    background-color: #f2f6f9;
+}
+
+.about_wrap .company li:first-child a {
+    padding-left: 23.44%;
+}
+
+.about_wrap .company .arrow {
+    display: block;
+    position: absolute;
+    bottom: 21.43%;
+    left: 10.63%;
+    width: 9.38%;
+    height: 2.86%;
+    background: url("../images/arrow_black.png") no-repeat right/auto 100%;
+    transition: width 0.3s;
+}
+
+.about_wrap .company li:first-child .arrow {
+    left: 23.44%;
+}
+
+.about_wrap .company li a p {
+    color: #333333;
+}
+
+.about_wrap .company a:hover .arrow {
+    width: 18.44%;
+}
+
+.about_wrap .product ul {
+    color: #fff;
+    text-align: center;
+}
+
+.about_wrap .product li {
+    width: calc(99.99% / 3);
+    background: no-repeat center/cover;
+}
+
+.about_wrap .product li:first-child {
+    background-image: url("../images/product_oled.jpg");
+}
+
+.about_wrap .product li:nth-child(2) {
+    background-image: url("../images/product_qd.jpg");
+}
+
+.about_wrap .product li:nth-child(3) {
+    background-image: url("../images/product_galaxy_z_fold3.jpg");
+}
+
+.about_wrap .product a {
+    padding: 11.2% 10.63%;
+}
+
+.about_wrap .product .pager {
+    display: none;
+}
+
+.about_wrap .product .pager li {
+    background-image: none;
+}
+
+.about_wrap .product li a p {
+    color: #e2e2e2;
+}
+
+@media screen and (max-width: 1439px) {
+    br.full_only {
+        display: none;
+    }
+    br.t_pc_only {
+        display: block;
+    }
+    .kv_wrap {
+        height: 48.61vw;
+    }
+    .kv_wrap .kv_txt {
+        left: 5.21vw;
+        width: 85%;
+    }
+    .kv_wrap .kv_txt h2 {
+        font-size: 3.82vw;
+    }
+    .kv_wrap .kv_txt p {
+        font-size: 1.39vw;
+        margin-top: 0.83vw;
+    }
+    .kv_wrap .kv_btn button {
+        width: 4.86vw;
+        height: 4.86vw;
+    }
+    .kv_wrap .kv_btn .play {
+        padding: 0.49vw;
+        width: 2.43vw;
+        height: 2.43vw;
+        left: 15.56vw;
+        bottom: 1.18vw;
+    }
+    .kv_wrap .kv_btn .play span {
+        background-size: 1.46vw 1.46vw;
+    }
+    .kv_wrap .kv_btn p {
+        font-size: 1.11vw;
+        line-height: 4.86vw;
+        padding: 0 2.08vw;
+    }
+    .kv_wrap .kv_link {
+        height: 8.48vw;
+        padding-top: 5.77vw;
+    }
+    .kv_wrap .kv_link p {
+        font-size: 1.25vw;
+        font-size: 1.04vw;
+    }
+    .kv_wrap .kv_link p+p {
+        margin-left: 5.21vw;
+    }
+    .kv_wrap .kv_link .arrow {
+        width: 2.08vw;
+        height: 0.49vw;
+        margin-left: 0.97vw;
+    }
+    .about_wrap {
+        height: auto;
+    }
+    .about_wrap>div {
+        float: none;
+        width: 100%;
+        height: 29.17vw;
+    }
+    .about_wrap h2 {
+        font-size: 2.43vw;
+    }
+    .about_wrap p {
+        font-size: 1.39vw;
+        margin-top: 0.21vw;
+    }
+    .about_wrap a,
+    .about_wrap .company li:first-child a,
+    .about_wrap .product a {
+        padding: 3.75vw 2.36vw;
+    }
+    .about_wrap .company li:first-child .arrow {
+        left: 2.36vw;
+    }
+    .kv_wrap .kv_img li:nth-child(1) a {
+        background-image: url("../images/kv-01-t.jpg");
+    }
+    .kv_wrap .kv_img li:nth-child(2) a {
+        background-image: url("../images/main_OLED-t.jpg");
+    }
+    .kv_wrap .kv_img li:nth-child(3) a {
+        background-image: url("../images/kv-02-t.jpg");
+    }
+    .kv_wrap .kv_img li:nth-child(4) a {
+        background-image: url("../images/kv-03-t-1.jpg");
+    }
+    .kv_wrap .kv_img li:nth-child(5) a {
+        background-image: url("../images/kv-04-t-1.jpg");
+    }
+    /*.kv_wrap .kv_img li:nth-child(5) a, .kv_wrap .kv_img li:nth-child(5) div {background-image: url('./../images/main/kv-05-t_03.jpg');}*/
+}
+
+@media screen and (max-width: 1024px) {
+    .kv_wrap {
+        height: 498px;
+    }
+    .kv_wrap .kv_txt h2 {
+        font-size: 39px;
+    }
+    .kv_wrap .kv_txt p {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    .kv_wrap .kv_btn button {
+        width: 50px;
+        height: 50px;
+    }
+    .kv_wrap .kv_btn .play {
+        padding: 5px;
+        width: 24px;
+        height: 24px;
+        left: 159px;
+        bottom: 12px;
+    }
+    .kv_wrap .kv_btn .play span {
+        background-size: 14px 14px;
+    }
+    .kv_wrap .kv_btn p {
+        font-size: 11px;
+        line-height: 50px;
+        padding: 0 21px;
+    }
+    .kv_wrap .kv_link p {
+        font-size: 13px;
+        font-size: 11px;
+    }
+    .kv_wrap .kv_link .arrow {
+        width: 21px;
+        height: 5px;
+        margin-left: 10px;
+    }
+    .about_wrap h2 {
+        font-size: 25px;
+    }
+    .about_wrap p {
+        font-size: 14px;
+        margin-top: 2px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .kv_wrap .kv_img li:nth-child(5) a,
+    .kv_wrap .kv_img li:nth-child(5) div {
+        background-image: url("../images/kv-05-t_03.jpg");
+        background-position-x: -44px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .kv_wrap .kv_link {
+        width: 498px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    br.t_pc_only {
+        display: none;
+    }
+    br.t_pc_only.m_only {
+        display: block;
+    }
+    .kv_wrap {
+        height: 140.63vw;
+    }
+    .kv_wrap .kv_color {
+        width: 18.23%;
+    }
+    .kv_wrap .kv_cont {
+        width: 81.77%;
+    }
+    .kv_wrap .kv_txt {
+        top: 13.67vw;
+        left: 6.51vw;
+        width: 80%;
+        transform: none;
+    }
+    .kv_wrap .kv_txt h2 {
+        font-size: 7.55vw;
+        line-height: 1.33;
+        letter-spacing: -0.01em;
+    }
+    .kv_wrap .kv_txt p {
+        font-size: 3.91vw;
+        line-height: 1.4;
+        margin-top: 1.56vw;
+        margin-top: 1.46vw;
+        padding-left: 0;
+    }
+    .kv_wrap .kv_btn {
+        width: 18.23%;
+        left: 0;
+    }
+    .kv_wrap .kv_btn button {
+        float: none;
+        width: 100%;
+        height: auto;
+        border-width: 1px;
+    }
+    .kv_wrap .kv_btn button+button {
+        border-top: none;
+    }
+    .kv_wrap .kv_btn p {
+        display: none;
+    }
+    .kv_wrap .kv_btn .play {
+        position: static;
+        float: none;
+        width: 100%;
+        height: auto;
+        left: auto;
+        bottom: auto;
+        padding: 0;
+        background-color: #fff;
+        border: 1px solid #e9e9e9;
+    }
+    .kv_wrap .kv_btn .play span {
+        background: url("../images/kv_pause-m.png") no-repeat 0 0 / contain;
+    }
+    .kv_wrap .kv_btn .play.paused span {
+        background-image: url("../images/kv_play-m.png");
+    }
+    .kv_wrap .kv_btn .prev span {
+        background-image: url("../images/kv_prev-m.png");
+    }
+    .kv_wrap .kv_btn .next span {
+        background-image: url("../images/kv_next-m.png");
+    }
+    .kv_wrap .kv_link {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        width: 81.77%;
+        min-width: auto;
+        height: 12.5%;
+        padding-top: 0;
+        /* background-color: rgba(255, 255, 255, .6); */
+        border-bottom: 1px solid #e9e9e9;
+        transform: none;
+    }
+    .kv_wrap .kv_link p {
+        width: 50%;
+        /* color: #000; */
+        font-size: 3.65vw;
+        line-height: 1.36;
+        letter-spacing: 0.025em;
+        text-align: left;
+    }
+    .kv_wrap .kv_link p+p {
+        margin-left: 0;
+    }
+    .kv_wrap .kv_link a {
+        padding: 3.91vw 6.51vw;
+    }
+    .kv_wrap .kv_link .arrow {
+        display: none;
+    }
+    /*2021-02-25추가*/
+    .kv_wrap .kv_img li:nth-child(1) a {
+        background-image: url("../images/kv-01-m.jpg");
+    }
+    .kv_wrap .kv_img li:nth-child(2) a {
+        background-image: url("../images/main_OLED-m.jpg");
+    }
+    .kv_wrap .kv_img li:nth-child(3) a {
+        background-image: url("../images/kv-02-m.jpg");
+    }
+    .kv_wrap .kv_img li:nth-child(4) a {
+        background-image: url("../images/kv-03-1-m.jpg");
+    }
+    .kv_wrap .kv_img li:nth-child(5) a {
+        background-image: url("../images/kv-04-1-m.jpg");
+        background-position-x: 0;
+        background-position: center;
+    }
+    .about_wrap {
+        height: auto;
+    }
+    .about_wrap>div {
+        float: none;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .about_wrap li {
+        float: none;
+        width: 100%;
+        height: 46.22vw;
+    }
+    .about_wrap a,
+    .about_wrap .company li:first-child a {
+        height: 100%;
+        padding: 0 18.23% 0 6.51%;
+    }
+    .about_wrap h2 {
+        font-size: 7.55vw;
+    }
+    .about_wrap p {
+        font-size: 3.91vw;
+        line-height: 1.47;
+        margin-top: 0.52vw;
+    }
+    .about_wrap .company li {
+        display: table;
+    }
+    .about_wrap .company a {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .about_wrap .company .arrow {
+        display: none;
+    }
+    .about_wrap .product ul {
+        width: 300%;
+        height: 87.5vw;
+    }
+    .about_wrap .product li {
+        float: left;
+        width: calc(100% / 3);
+        height: 100%;
+    }
+    .about_wrap .product li:first-child {
+        background-image: url("../images/product1-m.jpg");
+    }
+    .about_wrap .product li:nth-child(2) {
+        background-image: url("../images/product2-m.jpg");
+    }
+    .about_wrap .product li:last-child {
+        background-image: url("../images/product_galaxy_z_fold3-m.jpg");
+    }
+    .about_wrap .product a {
+        padding: 10.94% 6.51%;
+    }
+    .about_wrap .product .pager {
+        display: block;
+        position: absolute;
+        bottom: 5.95%;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+    .about_wrap .product .pager li {
+        float: none;
+        width: 10.42vw;
+        height: 100%;
+        margin: 0 0.65vw;
+        background: none;
+        opacity: 0.5;
+    }
+    .about_wrap .product .pager li span {
+        display: block;
+        height: 2px;
+        margin: 10px 0;
+        background-color: #fff;
+    }
+    .about_wrap .product .pager li.active {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .kv_wrap {
+        height: 450px;
+    }
+    .kv_wrap .kv_txt {
+        top: 44px;
+        left: 21px;
+    }
+    .kv_wrap .kv_txt h2 {
+        font-size: 24px;
+    }
+    .kv_wrap .kv_txt p {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    .kv_wrap .kv_link {
+        height: 58px;
+    }
+    .kv_wrap .kv_link p {
+        font-size: 12px;
+    }
+    .kv_wrap .kv_link a {
+        padding: 13px 21px;
+    }
+    .about_wrap li {
+        height: 148px;
+    }
+    .about_wrap h2 {
+        font-size: 24px;
+    }
+    .about_wrap p {
+        font-size: 13px;
+        margin-top: 2px;
+    }
+    .about_wrap .product ul {
+        height: 280px;
+    }
+    .about_wrap .product .pager li {
+        width: 33px;
+        margin: 0 2px;
+        opacity: 0.3;
+    }
+}

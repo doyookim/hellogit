@@ -1,0 +1,258 @@
+@charset "utf-8";
+* {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    color: inherit;
+    font: inherit;
+    vertical-align: baseline;
+    word-break: keep-all;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    min-height: 100%;
+    font-size: 1em;
+    font-family: "SamsungOneKorean";
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em {
+    font-weight: bold;
+}
+
+img,
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+main,
+section,
+caption {
+    display: block;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+strong {
+    display: block;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+col {
+    display: table-column;
+}
+
+button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: none;
+}
+
+button:focus,
+button:active {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+@font-face {
+    font-family: "SamsungOne";
+    src: url("./fonts/SamsungOne-400.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SamsungOne";
+    src: url("./fonts/SamsungOne-600.eot");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SamsungOne";
+    src: url("./fonts/SamsungOne-700.eot");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SamsungOneKorean";
+    src: url("./fonts/SamsungOneKorean-400.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SamsungOneKorean";
+    font-style: normal;
+    font-weight: bold;
+    src: url("./fonts/SamsungOneKorean-700.eot");
+}
+
+@font-face {
+    font-family: "SamsungSharpSans";
+    font-style: normal;
+    font-weight: bold;
+    src: local("samsungsharpsans-bold"), local("samsung sharp sans-bold"), local("samsung sharp sans bold");
+    src: url("./fonts/SamsungSharpSans-Bold.eot");
+}
+
+@font-face {
+    font-family: "SamsungSharpSans";
+    font-style: normal;
+    font-weight: normal;
+    src: local("samsungsharpsans-medium"), local("samsung sharp sans-medium"), local("samsung sharp sans medium");
+    src: url("./fonts/samsungsharpsans-medium_v2.eot");
+}
