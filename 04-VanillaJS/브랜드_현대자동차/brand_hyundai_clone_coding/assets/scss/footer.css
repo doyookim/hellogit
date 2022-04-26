@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/**
+* $변수명 : 값;
+* - 값의 형식은 CSS에서 기술하는 형태와 동일.(문자열,숫자 구분 없음)
+*/
+html {
+  position: relative;
+  overflow-y: scroll;
+}
+
+html,
+body {
+  position: relative;
+}
+
+body,
+div,
+section,
+dl,
+ul,
+li,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin: 0;
+  font-weight: normal;
+  font-family: "HyundaiKRMedium", "HyundaiMedium";
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover,
+a:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+button {
+  text-decoration: none;
+  color: #000;
+}
+
+button:hover,
+button:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+::-moz-placeholder {
+  color: #999;
+}
+
+:-ms-input-placeholder {
+  color: #999;
+}
+
+:-moz-placeholder {
+  color: #999;
+}
+
+table {
+  width: 100%;
+}
+
+.footer_wrap {
+  background: #000;
+  min-width: 1240px;
+  color: #cfc8c2;
+}
+
+.footer_wrap .footer_area {
+  position: relative;
+  width: 1120px;
+  margin: 0 auto;
+  padding: 74px 0 82px;
+  letter-spacing: 0.012em;
+}
+
+.footer_wrap .footer_area .logo {
+  margin-bottom: 75px;
+}
+
+.footer_wrap .footer_area img {
+  opacity: 1;
+}
+
+.footer_wrap .footer_area .footer_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_wrap .footer_area .footer_list div {
+  margin-bottom: 18px !important;
+  font-weight: normal;
+  font-size: 1.17em;
+  line-height: 1;
+  font-family: HyundaiKRMedium;
+  color: #fff;
+}
+
+.footer_wrap .footer_area .footer_list .f_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_wrap .footer_area .footer_list .f_row .ww_link {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #cfc8c2;
+}
+
+.footer_wrap .footer_area .footer_list .f_row .ww_link_ico {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.footer_wrap .footer_area .footer_list .f_row .ww_link_ico dd + dd {
+  margin-left: 17px;
+}
+
+.footer_wrap .footer_area .footer_list .f_row .ww_link_ico a {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-size: 21px 21px;
+}
+
+.footer_wrap .footer_area .footer_list .f_row .ww_link_ico .facebook {
+  background-image: url(../../images/facebook.png);
+}
+
+.footer_wrap .footer_area .footer_list .f_row .ww_link_ico .instar {
+  background-image: url(../../images/instagram.png);
+}
+
+.footer_wrap .footer_area .footer_list .f_row .ww_link_ico .youtube {
+  background-image: url(../../images/youtube.png);
+}
+
+.footer_wrap .footer_area .footer_list .f_row .ww_link_ico .twitter {
+  background-image: url(../../images/twitter.png);
+}
+
+.footer_wrap .footer_area .footer_list .f_list1 li {
+  margin-top: 6px;
+}
+
+.footer_wrap .footer_area .footer_list .f_list1_a {
+  display: block;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  font-size: 14px;
+  color: #cfc8c2;
+  line-height: 28px;
+}
+
+.footer_wrap .footer_area .footer_list .f_list1_a:hover {
+  color: #fff;
+}
+
+.footer_wrap .footer_area .footer_list .f_list1_a[target="_blank"]:after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: -1px 0 0 8px;
+  background-image: url(../../images/ico_link.png);
+  vertical-align: middle;
+}
+/*# sourceMappingURL=footer.css.map */

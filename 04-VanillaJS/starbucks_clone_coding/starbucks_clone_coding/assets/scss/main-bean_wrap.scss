@@ -1,0 +1,74 @@
+@import "./color.scss";
+@import "./reset.scss";
+
+#main-bean_wrap {
+  overflow: hidden;
+  position: relative;
+  height: 572px;
+  background: $pastelpink url(../../images/2022_Summer1_bean_bg2.jpg) center
+    center no-repeat;
+  background-size: cover;
+
+  &:before {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-position: center top;
+    background-repeat: no-repeat;
+    content: "";
+    top: -17.5%;
+    left: 0;
+    width: 425px;
+    height: 392px;
+    background-image: url(../../images/2022_Summer1_bean_bg_left.png);
+  }
+
+  &:after {
+    position: absolute;
+    display: block;
+    background-position: center top;
+    background-repeat: no-repeat;
+    content: "";
+    bottom: -15.5%;
+    right: 0;
+    width: 482px;
+    height: 360px;
+    background-image: url(../../images/2022_Summer1_bean_bg_right.png);
+  }
+}
+
+.main-bean_inner {
+  position: relative;
+  max-width: 1124px;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1124px;
+}
+
+.bean_img_box {
+  position: absolute;
+  z-index: 9;
+  top: 13.6%;
+  max-width: 310px;
+  width: 27.7%;
+  opacity: 1;
+  left: 14.5997%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.bean_txt_box {
+  position: absolute;
+  z-index: 9;
+  top: 31.9%;
+  max-width: 321px;
+  width: 28.7%;
+  opacity: 1;
+  right: 17.4988%;
+
+  img {
+    width: 100%;
+  }
+}

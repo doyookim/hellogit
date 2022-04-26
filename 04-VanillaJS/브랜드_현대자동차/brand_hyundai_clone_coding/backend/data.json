@@ -1,0 +1,48 @@
+{
+  "tag_main": [
+    { "tag": "# 아이오닉 5", "id": "아이오닉5" },
+    { "tag": "# 인터뷰", "id": "인터뷰" },
+    { "tag": "# 넥쏘", "id": "넥쏘" },
+    { "tag": "# 브랜드비전", "id": "브랜드비전" },
+    { "tag": "# 현대자동차 x 방탄소년단", "id": "현대자동차x방탄소년단" },
+    { "tag": "# 아임인차지", "id": "아임인차지" },
+    { "tag": "# for Tomorrow", "id": "forTomorrow" },
+    { "tag": "# 현대자동차 x 블룸버그", "id": "현대자동차x블룸버그" },
+    { "tag": "# ThisIsUs", "id": "ThisIsUs" },
+    { "tag": "# 친환경", "id": "친환경" }
+  ],
+
+  "tag_brand": [
+    { "tag": "# IAA 2021", "id": "IAA2021" },
+    { "tag": "# 지구의 날", "id": "지구의날" },
+    { "tag": "# H2U", "id": "H2U" },
+    { "tag": "# 넥쏘", "id": "넥쏘" },
+    { "tag": "# ThisIsUs", "id": "ThisIsUs" },
+    { "tag": "# 현대자동차 × 방탄소년단", "id": "현대자동차x방탄소년단" },
+    { "tag": "# 현대자동차 × 블룸버그", "id": "현대자동차×블룸버그" },
+    { "tag": "# 탄소 중립", "id": "탄소중립" },
+    { "tag": "# 브랜드비전", "id": "브랜드비전" },
+    { "tag": "# for Tomorrow", "id": "forTomorrow" }
+  ],
+
+  "tag_ioniq": [
+    { "tag": "# 아이오닉 5", "id": "아이오닉5" },
+    { "tag": "# 아임인차지", "id": "아임인차지" },
+    { "tag": "# 충전", "id": "충전" },
+    { "tag": "# 인터뷰", "id": "인터뷰" },
+    { "tag": "# V2L", "id": "V2L" },
+    { "tag": "# for Tomorrow", "id": "forTomorrow" },
+    { "tag": "# 현대자동차 × 방탄소년단", "id": "현대자동차x방탄소년단" },
+    { "tag": "# 현대자동차 × CNN", "id": "현대자동차×CNN" }
+  ],
+  "tag_lifestyle": [
+    { "tag": "# 패션", "id": "패션" },
+    { "tag": "# Sustainable Stars", "id": "SustainableStars" },
+    { "tag": "# Save&Save", "id": "Save&Save" },
+    { "tag": "# 친환경", "id": "친환경" },
+    { "tag": "# 현대자동차 × MMCA ", "id": "현대자동차×MMCA" },
+    { "tag": "# 마이크로 트래블", "id": "마이크로트래블" },
+    { "tag": "# 리스타일", "id": "리스타일" },
+    { "tag": "# 코나 일렉트릭", "id": "코나일렉트릭" }
+  ]
+}

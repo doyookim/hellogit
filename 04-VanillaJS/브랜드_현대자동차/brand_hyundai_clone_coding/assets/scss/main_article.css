@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/**
+* $변수명 : 값;
+* - 값의 형식은 CSS에서 기술하는 형태와 동일.(문자열,숫자 구분 없음)
+*/
+html {
+  position: relative;
+  overflow-y: scroll;
+}
+
+html,
+body {
+  position: relative;
+}
+
+body,
+div,
+section,
+dl,
+ul,
+li,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin: 0;
+  font-weight: normal;
+  font-family: "HyundaiKRMedium", "HyundaiMedium";
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover,
+a:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+span {
+  text-decoration: none !important;
+}
+
+button {
+  text-decoration: none;
+  color: #000;
+}
+
+button:hover,
+button:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+::-moz-placeholder {
+  color: #999;
+}
+
+:-ms-input-placeholder {
+  color: #999;
+}
+
+:-moz-placeholder {
+  color: #999;
+}
+
+table {
+  width: 100%;
+}
+
+.main_article_list .area_cols {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.main_article_list .area_cols [class*="wrap_cols"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -50px;
+}
+
+.main_article_list .area_cols .contBox_2 {
+  width: 1120px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.main_article_list .area_cols [class*="wrap_cols"] > [class*="col"] {
+  margin-bottom: 50px;
+}
+
+.main_article_list .area_cols .col_5w {
+  width: 40%;
+}
+
+.main_article_list .area_cols .col_4w {
+  width: 31.42857142857%;
+}
+
+.main_article_list .area_cols .col_3w {
+  width: 22.85714285714%;
+}
+
+.bgW {
+  background-color: #fff !important;
+}
+
+.contBox_2 {
+  width: 1120px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.colTit {
+  line-height: 24px;
+  margin-top: 15px;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: "HyundaiKRMedium", "HyundaiMedium";
+}
+
+.colTit .category {
+  display: block;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #002c5f;
+}
+/*# sourceMappingURL=main_article.css.map */

@@ -1,0 +1,113 @@
+@import "./color.scss";
+@import "./common.scss";
+
+.main_large {
+  .bgBl {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: $deepblue;
+
+    .contBox_2 {
+      width: 1120px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .imgArea {
+        width: 544px;
+
+        .txtArea {
+          width: 352px;
+        }
+      }
+    }
+
+    [class*="Area"] + [class*="Area"] {
+      margin-left: 32px;
+    }
+  }
+}
+.bgBl * {
+  color: $white;
+}
+.btn {
+  background: $deepgrey;
+  display: inline-block;
+  min-width: 140px;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+}
+.secTit {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1.3;
+  font-family: "HyundaiKRMedium", "HyundaiMedium";
+
+  .category {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: "HyundaiKRMedium", "HyundaiMedium";
+    font-weight: normal;
+  }
+}
+
+[class*="Tit"] .category {
+  display: block;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: $deepblue;
+}
+
+.main_social {
+  background-color: $h_background !important;
+
+  .bgLB {
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+    .contBox_2 > .secTit {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.sns_area {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 -32px -32px;
+
+  .sns_columns {
+    width: 352px;
+    height: 352px;
+    margin: 0 0 32px 32px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  li:nth-child(1) {
+    background-image: url("../../images/worldwide-brand-instagram-01-womens-day-220315.png");
+  }
+  li:nth-child(2) {
+    background-image: url("../../images/worldwide-brand-instagram-02-ioniq5-220315.png");
+  }
+  li:nth-child(3) {
+    background-image: url("../../images/worldwide-brand-instagram-03-tucson-asmr-220315.jpg");
+  }
+  li:nth-child(4) {
+    background-image: url("../../images/worldwide-brand-instagram-04-mmca-220315.png");
+  }
+  li:nth-child(5) {
+    background-image: url("../../images/worldwide-brand-instagram-05-tucson-220315.png");
+  }
+  li:nth-child(6) {
+    background-image: url("../../images/worldwide-brand-instagram-06-tucson-220315.png");
+  }
+}

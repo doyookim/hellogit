@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/**
+    @filename : color.scss 
+    @author : 김도유(jeje_k@naver.com) 
+    @description : 공통적으로 쓰이는 컬러값
+**/
+/**
+    @filename : color.scss 
+    @author : 김도유(jeje_k@naver.com) 
+    @description : 공통적으로 쓰이는 컬러값
+**/
+/* CSS 초기화*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  font-family: "nbg", "맑은 고딕", HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+  font-size: 1em;
+  line-height: 1;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul,
+li {
+  list-style: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+  vertical-align: baseline;
+  color: #666;
+  background: transparent;
+  cursor: pointer;
+  /* 접근성_20171106 추가 */
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  vertical-align: top;
+  border-radius: 0;
+  font-family: "nbg", "맑은 고딕", HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+}
+
+.hid {
+  position: absolute;
+  left: -9999px;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "nbg";
+  src: url("../fonts/NanumBarunGothic.eot");
+}
+
+@font-face {
+  font-family: "nbg";
+  src: url("../fonts/NanumBarunGothic.woff");
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  display: block;
+}
+
+sub {
+  font-size: 10px;
+}
+
+#main-bean_wrap {
+  overflow: hidden;
+  position: relative;
+  height: 572px;
+  background: #f9e8ee url(../../images/2022_Summer1_bean_bg2.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#main-bean_wrap:before {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  background-position: center top;
+  background-repeat: no-repeat;
+  content: "";
+  top: -17.5%;
+  left: 0;
+  width: 425px;
+  height: 392px;
+  background-image: url(../../images/2022_Summer1_bean_bg_left.png);
+}
+
+#main-bean_wrap:after {
+  position: absolute;
+  display: block;
+  background-position: center top;
+  background-repeat: no-repeat;
+  content: "";
+  bottom: -15.5%;
+  right: 0;
+  width: 482px;
+  height: 360px;
+  background-image: url(../../images/2022_Summer1_bean_bg_right.png);
+}
+
+.main-bean_inner {
+  position: relative;
+  max-width: 1124px;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1124px;
+}
+
+.bean_img_box {
+  position: absolute;
+  z-index: 9;
+  top: 13.6%;
+  max-width: 310px;
+  width: 27.7%;
+  opacity: 1;
+  left: 14.5997%;
+}
+
+.bean_img_box img {
+  width: 100%;
+}
+
+.bean_txt_box {
+  position: absolute;
+  z-index: 9;
+  top: 31.9%;
+  max-width: 321px;
+  width: 28.7%;
+  opacity: 1;
+  right: 17.4988%;
+}
+
+.bean_txt_box img {
+  width: 100%;
+}
+/*# sourceMappingURL=main-bean_wrap.css.map */

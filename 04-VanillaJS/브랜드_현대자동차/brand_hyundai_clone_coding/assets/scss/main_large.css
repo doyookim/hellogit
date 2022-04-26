@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/**
+* $변수명 : 값;
+* - 값의 형식은 CSS에서 기술하는 형태와 동일.(문자열,숫자 구분 없음)
+*/
+html {
+  position: relative;
+  overflow-y: scroll;
+}
+
+html,
+body {
+  position: relative;
+}
+
+body,
+div,
+section,
+dl,
+ul,
+li,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin: 0;
+  font-weight: normal;
+  font-family: "HyundaiKRMedium", "HyundaiMedium";
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover,
+a:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+span {
+  text-decoration: none !important;
+}
+
+button {
+  text-decoration: none;
+  color: #000;
+}
+
+button:hover,
+button:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+::-moz-placeholder {
+  color: #999;
+}
+
+:-ms-input-placeholder {
+  color: #999;
+}
+
+:-moz-placeholder {
+  color: #999;
+}
+
+table {
+  width: 100%;
+}
+
+.main_large .bgBl {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #002c5f;
+}
+
+.main_large .bgBl .contBox_2 {
+  width: 1120px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.main_large .bgBl .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_large .bgBl .row .imgArea {
+  width: 544px;
+}
+
+.main_large .bgBl .row .imgArea .txtArea {
+  width: 352px;
+}
+
+.main_large .bgBl [class*="Area"] + [class*="Area"] {
+  margin-left: 32px;
+}
+
+.bgBl * {
+  color: #fff;
+}
+
+.btn {
+  background: #777673;
+  display: inline-block;
+  min-width: 140px;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.secTit {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1.3;
+  font-family: "HyundaiKRMedium", "HyundaiMedium";
+}
+
+.secTit .category {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-family: "HyundaiKRMedium", "HyundaiMedium";
+  font-weight: normal;
+}
+
+[class*="Tit"] .category {
+  display: block;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #002c5f;
+}
+
+.main_social {
+  background-color: #f6f3f2 !important;
+}
+
+.main_social .bgLB {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.main_social .bgLB .contBox_2 > .secTit {
+  margin-bottom: 20px;
+}
+
+.sns_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 -32px -32px;
+}
+
+.sns_area .sns_columns {
+  width: 352px;
+  height: 352px;
+  margin: 0 0 32px 32px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.sns_area li:nth-child(1) {
+  background-image: url("../../images/worldwide-brand-instagram-01-womens-day-220315.png");
+}
+
+.sns_area li:nth-child(2) {
+  background-image: url("../../images/worldwide-brand-instagram-02-ioniq5-220315.png");
+}
+
+.sns_area li:nth-child(3) {
+  background-image: url("../../images/worldwide-brand-instagram-03-tucson-asmr-220315.jpg");
+}
+
+.sns_area li:nth-child(4) {
+  background-image: url("../../images/worldwide-brand-instagram-04-mmca-220315.png");
+}
+
+.sns_area li:nth-child(5) {
+  background-image: url("../../images/worldwide-brand-instagram-05-tucson-220315.png");
+}
+
+.sns_area li:nth-child(6) {
+  background-image: url("../../images/worldwide-brand-instagram-06-tucson-220315.png");
+}
+/*# sourceMappingURL=main_large.css.map */

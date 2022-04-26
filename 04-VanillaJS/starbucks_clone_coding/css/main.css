@@ -1,0 +1,730 @@
+.main-visual_wrap {
+    height: 646px;
+    background-image: url("/img/2022_Summer1_main_bg.jpg");
+}
+
+.main-visual_wrap .main-visual_inner {
+    max-width: 1130px;
+}
+
+.main-visual_slogan,
+.btn_slogan {
+    position: absolute;
+    width: 355px;
+}
+
+.main-visual_slogan {
+    top: 7.1%;
+    left: 44px;
+}
+
+.btn_slogan {
+    z-index: 10;
+    top: 39%;
+    left: 6px;
+    text-align: center;
+}
+
+.btn_slogan a {
+    width: 129px;
+    margin: 0 auto;
+    color: #d73a7a;
+    border: 2px solid #d73a7a;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+}
+
+.btn_slogan a:hover {
+    background-color: #d73a7a;
+    color: white;
+}
+
+.main-visual_set {
+    height: 100%;
+}
+
+.set_01 {
+    z-index: 8;
+    top: 11.8%;
+    left: 35.7%;
+    width: 48.7%;
+    max-width: 548px;
+}
+
+.set_02 {
+    z-index: 9;
+    top: 33.5%;
+    left: 19.6%;
+    width: 41.5%;
+    max-width: 468px;
+}
+
+.set_03 {
+    z-index: 10;
+    top: 15.6%;
+    right: -8%;
+    width: 26.9%;
+    max-width: 302px;
+}
+
+.set_common:after {
+    display: none;
+}
+
+.reserve_magazine_wrap .reserve_detail-btn_wrap {
+    width: 100% !important;
+}
+
+
+/* (필수)리저브 매거진 */
+
+
+/* media queries pc */
+
+@media screen and (max-width: 1400px) {
+    .main-visual_wrap {
+        background-position: 63% bottom;
+    }
+    .main-visual_slogan {
+        left: -1%;
+        width: 27%;
+    }
+    .set_01 {
+        left: 27.7%;
+    }
+    .set_02 {
+        left: 11.6%;
+    }
+    .set_03 {
+        right: 0%;
+    }
+    .btn_slogan {
+        top: 38.5%;
+        left: -53px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    /* 기존 1130px */
+    .main-visual_wrap {
+        height: 58vw;
+    }
+    .main-visual_wrap .main-visual_inner {
+        max-width: 100%;
+    }
+    .main-visual_slogan,
+    .btn_slogan {
+        top: 12%;
+        left: 3.5%;
+        width: 20%;
+    }
+    .btn_slogan {
+        top: 37.7%;
+    }
+    .set_01 {
+        top: 17.8%;
+        left: 27.7%;
+        width: 43.7%;
+    }
+    .set_02 {
+        top: 41.5%;
+        left: 11.6%;
+        width: 37.5%;
+    }
+    .set_03 {
+        top: 24.6%;
+        right: 8%;
+        width: 23.9%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-visual_wrap {
+        height: 60vw;
+    }
+    .main-visual_slogan,
+    .btn_slogan {
+        width: 20%;
+    }
+    .btn_slogan a {
+        width: 108px;
+        height: 34px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .layer_floating {
+        top: 85px;
+        width: 14%;
+    }
+    /* 시즌 음료 가림 */
+}
+
+
+/* media queries mobile */
+
+@media screen and (max-width: 640px) {
+    .layer_floating {
+        top: 108px;
+        width: 25.7%;
+        right: 1.8%;
+    }
+    /* 시즌 음료 가림 */
+    .main-visual_wrap {
+        width: auto;
+        height: 263.1vw;
+        padding-top: 9px;
+        background-image: url("/img/m_2022_Summer1_main_bg.jpg");
+        background-position: center top;
+        box-sizing: border-box;
+    }
+    .main-visual_slogan {
+        width: 49%;
+        max-width: 312px;
+        top: 4.1%;
+        left: 10.4%;
+    }
+    .pc-drink {
+        display: none;
+    }
+    .m-drink {
+        display: block;
+    }
+    .set_common {
+        bottom: auto;
+        margin: 0;
+    }
+    .set_01 {
+        z-index: 8;
+        top: 20.6%;
+        right: 0;
+        left: 11.2%;
+        width: 80.1%;
+        max-width: 512px;
+    }
+    .set_02 {
+        z-index: 9;
+        top: 39.4%;
+        left: 7.5%;
+        width: 92.8%;
+        max-width: 592px;
+    }
+    .set_03 {
+        z-index: 8;
+        top: auto;
+        right: 9.5%;
+        bottom: 12.5%;
+        width: 78.4%;
+        max-width: 499px;
+    }
+    .btn_slogan {
+        z-index: 10;
+        top: auto;
+        bottom: 6.5%;
+        width: auto;
+        margin-left: -54px;
+        padding-top: 0;
+    }
+    .btn_slogan a {
+        width: 108px;
+        color: #d73a7a;
+        border-color: #d73a7a;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-visual_wrap {
+        height: 291vw;
+    }
+}
+
+#main-bean_wrap {
+    position: relative;
+    height: 572px;
+    background: #f9e8ee url("/img/2022_Summer1_bean_bg2.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#main-bean_wrap:before,
+#main-bean_wrap:after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-position: center top;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+#main-bean_wrap:before {
+    top: -17.5%;
+    left: 0;
+    width: 425px;
+    height: 392px;
+    background-image: url("/img/2022_Summer1_bean_bg_left.png");
+}
+
+#main-bean_wrap:after {
+    bottom: -15.5%;
+    right: 0;
+    width: 482px;
+    height: 360px;
+    background-image: url("/img/2022_Summer1_bean_bg_right.png");
+}
+
+.main-bean_inner {
+    max-width: 1124px;
+}
+
+.bean_img_box {
+    z-index: 9;
+    top: 13.6%;
+    left: 14.9%;
+    max-width: 310px;
+    width: 27.7%;
+}
+
+.bean_txt_box {
+    z-index: 9;
+    top: 31.9%;
+    right: 15.8%;
+    max-width: 321px;
+    width: 28.7%;
+}
+
+.btn_bean_detail {
+    margin-top: 39px;
+}
+
+.btn_bean_detail a {
+    color: #1e245c;
+    border: 2px solid #1e245c;
+    transition: background-color 0.7s, color 0.7s;
+    -webkit-transition: background-color 0.7s, color 0.7s;
+}
+
+.btn_bean_detail a:hover {
+    background-color: #1e245c;
+    color: #fff;
+}
+
+@media all and (max-width: 1500px) {
+    #main-bean_wrap {
+        background-position: 70% center;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    #main-bean_wrap {
+        height: 53vw;
+    }
+    #main-bean_wrap:before,
+    #main-bean_wrap:after {
+        background-size: contain;
+    }
+    #main-bean_wrap:before {
+        width: 30%;
+        height: 50%;
+        top: -10%;
+        background-position: left bottom;
+    }
+    #main-bean_wrap:after {
+        width: 30%;
+        height: 50%;
+        bottom: -8%;
+        background-position: right bottom;
+    }
+    .bean_img_box {
+        left: 20%;
+        transform: translateX(30%);
+    }
+    .bean_txt_box {
+        right: 11%;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .bean_txt_box {
+        transform: translateY(5%);
+    }
+    .bean_img_box {
+        transform: translateX(30%) translateY(5%);
+    }
+}
+
+@media all and (max-width: 640px) {
+    #main-bean_wrap {
+        height: 172.81vw;
+        background-image: url("/img/m_2022_Summer1_bean_bg.jpg");
+        background-position: center;
+    }
+    #main-bean_wrap:before,
+    #main-bean_wrap:after {
+        display: none;
+    }
+    .bean_img_box {
+        z-index: 10;
+        top: 10.6%;
+        left: 50%;
+        width: 55%;
+        max-width: 350px;
+        transform: translate(36%, 7.8%);
+    }
+    .bean_txt_box {
+        z-index: 10;
+        top: auto;
+        right: 50%;
+        bottom: 10.5%;
+        max-width: 402px;
+        width: 63%;
+        transform: translate(-1.7%, -31%);
+    }
+    .bean_img_box img,
+    .bean_txt_box img {
+        width: 100%;
+    }
+    .btn_bean_detail {
+        margin: 14% auto 0;
+        transform: translateY(20px);
+    }
+}
+
+@media all and (max-width: 500px) {
+    .bean_txt_box {
+        transform: translate(-1.7%, -20%);
+    }
+}
+
+.reserve_wrap {
+    position: relative;
+    height: 400px;
+    background: url("https://image.istarbucks.co.kr/img/event/2022/reserve_2022_indonesia_visual_bg.jpg") no-repeat center top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.reserve_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.reserve_title img,
+.reserve_visual img {
+    width: auto;
+}
+
+.reserve_title {
+    position: relative;
+    z-index: 10;
+    padding-top: 115px;
+    max-width: 1080px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.reserve_title img {
+    transform: translateX(-11px);
+}
+
+.reserve_visual {
+    display: block;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    opacity: 0;
+}
+
+.reserve_visual .reserve_visual-pc {
+    max-width: none;
+}
+
+.reserve_visual::before {
+    content: url("/img/reserve_2022_indonesia_leaf1.png");
+    position: absolute;
+    left: 0;
+    bottom: -1%;
+}
+
+.reserve_visual::after {
+    content: url("/img/reserve_2022_indonesia_leaf2.png");
+    position: absolute;
+    right: 0;
+    bottom: -1%;
+}
+
+.reserve_detail-btn_wrap {
+    position: relative;
+    z-index: 10;
+    max-width: 1080px;
+    margin-top: 39px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 254px;
+    box-sizing: border-box;
+}
+
+.reserve_detail-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #b9813e;
+    font-size: 15px;
+    line-height: 34px;
+    text-align: center;
+    border: 2px solid #b9813e;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: background-color 0.7s, color 0.7s, border-color 0.7s;
+    -webkit-transition: background-color 0.7s, color 0.7s, border-color 0.7s;
+}
+
+.reserve_detail-btn a:hover {
+    color: #fff;
+    background-color: #b9813e;
+}
+
+.reserve_magazine_wrap .reserve_visual:before,
+.reserve_magazine_wrap .reserve_visual:after {
+    display: none;
+}
+
+.reserve_magazine_wrap .reserve_detail-btn_wrap {
+    width: auto;
+    padding-left: 0;
+}
+
+@media screen and (min-width: 2000px) {
+    .reserve_visual {
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .reserve_inner:before {
+        top: 12px;
+        width: 180px;
+        height: 109px;
+        background-size: cover;
+    }
+    .reserve_visual {
+        right: -4%;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .reserve_visual {
+        right: -10%;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .reserve_visual {
+        right: -16%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .reserve_visual {
+        right: -22%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .reserve_visual {
+        right: -28%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .reserve_visual {
+        right: -34%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .reserve_visual {
+        right: -40%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .reserve_visual {
+        right: -46%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .reserve_wrap {
+        height: 357px;
+    }
+    .reserve_inner:before {
+        display: none;
+    }
+    .reserve_title {
+        max-width: none;
+        width: 42%;
+        margin-right: 0;
+        margin-left: 25px;
+        padding-top: 75px;
+        padding-left: 25px;
+    }
+    .reserve_visual {
+        right: -49%;
+        bottom: -6%;
+    }
+    .reserve_title img {
+        transform: none;
+    }
+    .reserve_detail-btn_wrap {
+        max-width: none;
+        width: 40%;
+        margin-left: 0;
+        padding-left: 25.5%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .reserve_visual {
+        right: -55%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .reserve_visual {
+        right: -62%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .reserve_wrap {
+        height: 100%;
+    }
+    .reserve_wrap:after {
+        display: none;
+    }
+    .reserve_title {
+        display: none;
+    }
+    .reserve_visual {
+        bottom: 0;
+        right: auto;
+        width: 100%;
+    }
+    .reserve_visual img {
+        max-width: none;
+        width: 100%;
+    }
+    .reserve_visual::before {
+        display: none;
+    }
+    .reserve_visual::after {
+        display: none;
+    }
+    .reserve_detail-btn_wrap {
+        position: static;
+        width: auto;
+        margin-top: 0;
+        padding-left: 0;
+    }
+    .reserve_detail-btn {
+        position: absolute;
+        z-index: 10;
+        bottom: 10%;
+        left: 50%;
+        margin-left: -55.4px;
+    }
+    .reserve_detail-btn a {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-color: #fff;
+    }
+    .reserve_detail-btn a:hover {
+        border-color: #fff;
+        background-color: #fff;
+        color: #000;
+    }
+    .reserve_magazine_wrap .reserve_detail-btn {
+        position: static;
+    }
+    .reserve_magazine_wrap .reserve_detail-btn a {
+        background-color: #fff;
+    }
+    .reserve_magazine_wrap .reserve_detail-btn a:hover {
+        color: #fff;
+        border-color: #000;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .reserve_detail-btn {
+        width: 115px;
+        height: 34px;
+        line-height: 32px;
+        margin-top: 0;
+    }
+    .reserve_detail-btn a {
+        font-size: 13px;
+        line-height: 30px;
+    }
+}
+
+.fav_img {
+    top: 100px;
+    right: -10px;
+    width: 672px;
+    height: 458px;
+    background-image: url("/img/2022_Summer1_pick_img.png");
+}
+
+@media screen and (max-width: 1280px) {
+    .fav_img {
+        top: 80px;
+        right: 100px;
+        width: 612px;
+        height: 411px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .fav_img {
+        position: static;
+        top: auto;
+        right: auto;
+        margin: 130px auto 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #favWrap {
+        background-position: center -6px;
+        background-size: cover;
+    }
+    .fav_img {
+        width: 460px;
+        height: 314px;
+    }
+    .btn_fav_prod {
+        width: 115px;
+        height: 34px;
+        line-height: 32px;
+        margin-top: 0;
+    }
+    .btn_fav_prod a {
+        font-size: 13px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fav_img {
+        width: 320px;
+        height: 264px;
+        margin: 90px auto 0;
+    }
+}

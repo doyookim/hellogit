@@ -1,0 +1,1 @@
+(function () { /*KR South Korea*/	var country = {'code':'kr','id':45,'defaultLangauge':'ko'};	if (!window.evidon) window.evidon = {};	if (window.evidon.notice) {window.evidon.notice.setLocation(country);}	window.evidon.location = country;})(); 

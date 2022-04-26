@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/**
+* $변수명 : 값;
+* - 값의 형식은 CSS에서 기술하는 형태와 동일.(문자열,숫자 구분 없음)
+*/
+html {
+  position: relative;
+  overflow-y: scroll;
+}
+
+html,
+body {
+  position: relative;
+}
+
+body,
+div,
+section,
+dl,
+ul,
+li,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin: 0;
+  font-weight: normal;
+  font-family: "HyundaiKRMedium", "HyundaiMedium";
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover,
+a:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+button {
+  text-decoration: none;
+  color: #000;
+}
+
+button:hover,
+button:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+::-moz-placeholder {
+  color: #999;
+}
+
+:-ms-input-placeholder {
+  color: #999;
+}
+
+:-moz-placeholder {
+  color: #999;
+}
+
+table {
+  width: 100%;
+}
+
+.topic_wrap {
+  padding-top: 7px;
+  width: 100%;
+  height: 74px;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.topic_wrap .topic_container {
+  position: relative;
+  display: inline-block;
+  width: 1120px;
+  height: 100%;
+  text-align: center;
+}
+
+.topic_wrap .topic_container .topic_left {
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  z-index: 2;
+}
+
+.topic_wrap .topic_container .topic_right {
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 1%, white 100%);
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  z-index: 2;
+}
+
+.topic_wrap .topic_container .swiper-container {
+  width: 1120px;
+  height: 100%;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.topic_wrap .topic_container .swiper-container .swipe_wrap {
+  width: 1307px;
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.topic_wrap .topic_container .swiper-container .swipe_wrap li {
+  display: table-cell;
+  width: auto !important;
+  white-space: nowrap;
+  vertical-align: middle;
+  position: relative;
+}
+
+.topic_wrap .topic_container .swiper-container .swipe_wrap li a {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  line-height: 35px;
+  color: #7e7e7e;
+  text-decoration: none;
+  padding: 41px 25px 0 26px;
+  font-family: "HyundaiKRRegular";
+}
+
+.topic_wrap .topic_container .swiper-container .swipe_wrap li a span {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.topic_wrap .topic_container .swiper-container .swipe_wrap li a:hover {
+  color: #00aad2;
+}
+
+.topic_wrap .topic_container .swiper-container .swipe_wrap li:after {
+  position: absolute;
+  right: 0;
+  top: 54px;
+  height: 9px;
+  width: 1px;
+  background-color: #d3d3d3;
+  content: "";
+}
+/*# sourceMappingURL=navbar.css.map */

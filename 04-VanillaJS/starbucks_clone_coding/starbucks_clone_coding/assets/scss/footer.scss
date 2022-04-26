@@ -1,0 +1,38 @@
+@import "./color.scss";
+@import "./reset.scss";
+
+#footer {
+  padding: 32px 0 35px 0;
+  background: $blackThree;
+  clear: both;
+  position: relative;
+  width: 100%;
+}
+.footer_wrap {
+  background: url(../../images/footer_logo.png) right 8px no-repeat;
+  display: inline-block;
+  left: 50%;
+  position: relative;
+  margin-left: -381px;
+  width: 762px;
+}
+
+.footer_menus ul {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 30px;
+  width: 251px;
+
+  li a {
+    width: 100%;
+    color: $white;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  li.footer_menu_ttl a {
+    color: $white;
+    font-size: 14px;
+    line-height: 40px;
+  }
+}

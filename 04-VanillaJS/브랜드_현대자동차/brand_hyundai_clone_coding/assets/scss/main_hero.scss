@@ -1,0 +1,79 @@
+@import "./color.scss";
+@import "./common.scss";
+
+.main_hero {
+  .area_cols {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: $white;
+
+    [class*="wrap-cols"] {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: -50px;
+    }
+
+    [class*="wrap-cols"] > [class*="col"] {
+      margin-bottom: 50px;
+    }
+
+    .contBox-2 {
+      width: 1120px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    [class*="col"] {
+      position: relative;
+    }
+
+    .wrap-cols-hero {
+      align-items: flex-end;
+
+      .col_main {
+        width: 736px;
+      }
+
+      .colTit {
+        margin-bottom: 10px;
+        font-size: 44px;
+        line-height: 1.2;
+
+        [class*="Tit"] .category {
+          display: block;
+          font-size: 12px;
+          font-family: "HyundaiKRMedium", "HyundaiMedium";
+          line-height: 1;
+          letter-spacing: 0.1em;
+        }
+        .category {
+          margin-bottom: 2px;
+          font-size: 15px;
+          color: $deepblue;
+        }
+      }
+      .col_sub {
+        width: 352px;
+
+        .colTit {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 14px 11px 10px 13px;
+          font-size: 24px;
+          line-height: 1.2;
+          width: 100%;
+          background-color: $deepblue;
+          color: $white;
+
+          .category {
+            font-size: 12px;
+            color: $white;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

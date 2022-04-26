@@ -1,0 +1,117 @@
+@import "./color.scss";
+@import "./reset.scss";
+
+#topWrap {
+  border-top: 2px solid $black;
+  position: relative;
+  height: 100% !important;
+}
+
+.layer_floating {
+  position: fixed;
+  top: 154px;
+  width: 140px;
+  margin-left: 485px;
+  z-index: 999;
+  left: auto;
+  right: 1%;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+/** main visual wrap */
+.main-visual_wrap {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 646px;
+  background-image: url(../../images/2022_Summer1_main_bg.jpg);
+  background-position: 63% bottom;
+
+  .main-visual_inner {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1130px;
+
+    .main-visual_slogan {
+      position: absolute;
+      top: 7.1%;
+      left: -1%;
+      width: 27%;
+      opacity: 1;
+    }
+
+    .main-visual_set {
+      height: 100%;
+
+      .set_common {
+        position: absolute;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .set_01 {
+        z-index: 8;
+        top: 11.8%;
+        width: 48.7%;
+        max-width: 548px;
+        left: 27.7%;
+        opacity: 1;
+      }
+
+      .set_02 {
+        z-index: 9;
+        top: 33.5%;
+        width: 41.5%;
+        max-width: 468px;
+        left: 11.6%;
+      }
+
+      .set_03 {
+        z-index: 10;
+        top: 15.6%;
+        width: 26.9%;
+        max-width: 302px;
+        right: 0%;
+      }
+    }
+
+    .btn_slogan {
+      height: 38px;
+      position: absolute;
+      width: 355px;
+      z-index: 10;
+      text-align: center;
+      top: 38.5%;
+      left: -53px;
+      opacity: 1;
+
+      a {
+        display: block;
+        height: 100%;
+        font-size: 15px;
+        line-height: 34px;
+        border-radius: 5px;
+        text-align: center;
+        box-sizing: border-box;
+        width: 129px;
+        margin: 0 auto;
+        color: $hotpink;
+        border: 2px solid $hotpink;
+        -webkit-transition: background-color 0.5s;
+      }
+    }
+  }
+}

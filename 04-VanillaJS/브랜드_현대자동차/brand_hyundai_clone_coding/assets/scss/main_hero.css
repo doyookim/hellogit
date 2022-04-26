@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/**
+* $변수명 : 값;
+* - 값의 형식은 CSS에서 기술하는 형태와 동일.(문자열,숫자 구분 없음)
+*/
+html {
+  position: relative;
+  overflow-y: scroll;
+}
+
+html,
+body {
+  position: relative;
+}
+
+body,
+div,
+section,
+dl,
+ul,
+li,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin: 0;
+  font-weight: normal;
+  font-family: "HyundaiKRMedium", "HyundaiMedium";
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover,
+a:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+button {
+  text-decoration: none;
+  color: #000;
+}
+
+button:hover,
+button:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+::-moz-placeholder {
+  color: #999;
+}
+
+:-ms-input-placeholder {
+  color: #999;
+}
+
+:-moz-placeholder {
+  color: #999;
+}
+
+table {
+  width: 100%;
+}
+
+.main_hero .area_cols {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #fff;
+}
+
+.main_hero .area_cols [class*="wrap-cols"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -50px;
+}
+
+.main_hero .area_cols [class*="wrap-cols"] > [class*="col"] {
+  margin-bottom: 50px;
+}
+
+.main_hero .area_cols .contBox-2 {
+  width: 1120px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.main_hero .area_cols [class*="col"] {
+  position: relative;
+}
+
+.main_hero .area_cols .wrap-cols-hero {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main_hero .area_cols .wrap-cols-hero .col_main {
+  width: 736px;
+}
+
+.main_hero .area_cols .wrap-cols-hero .colTit {
+  margin-bottom: 10px;
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.main_hero .area_cols .wrap-cols-hero .colTit [class*="Tit"] .category {
+  display: block;
+  font-size: 12px;
+  font-family: "HyundaiKRMedium", "HyundaiMedium";
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.main_hero .area_cols .wrap-cols-hero .colTit .category {
+  margin-bottom: 2px;
+  font-size: 15px;
+  color: #002c5f;
+}
+
+.main_hero .area_cols .wrap-cols-hero .col_sub {
+  width: 352px;
+}
+
+.main_hero .area_cols .wrap-cols-hero .col_sub .colTit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 14px 11px 10px 13px;
+  font-size: 24px;
+  line-height: 1.2;
+  width: 100%;
+  background-color: #002c5f;
+  color: #fff;
+}
+
+.main_hero .area_cols .wrap-cols-hero .col_sub .colTit .category {
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=main_hero.css.map */

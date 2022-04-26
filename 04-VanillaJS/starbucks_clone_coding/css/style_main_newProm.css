@@ -1,0 +1,716 @@
+@charset 'utf-8';
+span.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+
+/***************************************************************** s::20200702 main_floating ************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+.layer_floating {
+    position: fixed;
+    top: 154px;
+    left: 54.5%;
+    width: 140px;
+    margin-left: 485px;
+    z-index: 999;
+}
+
+
+/* 20210118 수정 */
+
+
+/* 202101 고도화  width 추가 */
+
+.layer_floating a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.layer_floating img {
+    display: block;
+    width: 100%;
+}
+
+.layer_floating .mobile-badge {
+    display: none;
+}
+
+.layer_floating .plcc {
+    margin-top: 8px;
+    margin-top: 0;
+}
+
+
+/* 20210118 수정 */
+
+@media all and (max-width: 1400px) {
+    .layer_floating {
+        left: auto;
+        right: 1%;
+    }
+    /* 20201123 수정 */
+}
+
+@media all and (max-width: 960px) {
+    .layer_floating {
+        top: 85px;
+        width: 14%;
+    }
+    .layer_floating .pc-badge {
+        display: none;
+    }
+    .layer_floating .mobile-badge {
+        display: block;
+    }
+}
+
+@media all and (max-width: 740px) {
+    .layer_floating {
+        top: 95px;
+        width: 16.5%;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .layer_floating {
+        top: 108px;
+        width: 25.7%;
+        right: 1.8%;
+    }
+    /* 20210118 수정 */
+}
+
+
+/***************************************************************** e::20200702 main_floating ************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+
+/***************************************************************** s::20210118 main_visual **************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+
+/* 202101 고도화 정리 (유지:CSS) */
+
+#topWrap {
+    height: 100% !important;
+}
+
+.main-visual_wrap {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-visual_wrap.img_type {
+    position: relative;
+    left: 50%;
+    top: 0;
+    width: 2000px;
+    height: 645px;
+    margin-left: -1000px;
+    background-position: top center;
+}
+
+
+/* 202101 고도화 추가 */
+
+.main-visual_inner {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.main-visual_slogan {
+    opacity: 0;
+}
+
+.set_common img {
+    width: 100%;
+}
+
+.set_common:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* 20210208 수정 */
+
+.set_common>a {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+}
+
+.btn_slogan,
+.set_common {
+    position: absolute;
+    opacity: 0;
+}
+
+.btn_slogan {
+    width: 125px;
+    height: 38px;
+}
+
+.btn_slogan a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.main-visual_wrap.img_type .btn_slogan {
+    top: 50%;
+    left: 10.5%;
+    margin-top: 0 !important;
+    opacity: 1;
+    z-index: 5;
+    transform: translateY(-50%);
+}
+
+
+/* 202101 고도화 추가 */
+
+.main-visual_wrap.img_type .btn_slogan a {
+    color: #fff;
+    border: 2px solid #fff;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+}
+
+.main-visual_wrap.img_type .btn_slogan a:hover {
+    color: #222;
+    background-color: #fff;
+}
+
+.m-slogan {
+    display: none;
+}
+
+.m-drink {
+    display: none;
+}
+
+@media screen and (max-width: 1130px) {
+    .main-visual_wrap.img_type {
+        height: 580px;
+        width: 1500px;
+        margin-left: -750px;
+    }
+    /* 202101 고도화 추가 */
+    .main-visual_wrap.img_type .btn_slogan {
+        left: 12.5%;
+    }
+    /* 202101 고도화 추가 */
+}
+
+@media screen and (max-width: 1000px) {
+    .main-visual_wrap.img_type {
+        height: 485px;
+        width: 1000px;
+        margin-left: -500px;
+    }
+    /* 202101 고도화 추가 */
+    .main-visual_wrap.img_type .btn_slogan {
+        left: 25%;
+    }
+}
+
+@media all and (min-width: 641px) and (max-width: 875px) {
+    .main-visual_wrap.img_type {
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main-visual_wrap {
+        min-width: 320px;
+    }
+    .main-visual_wrap.img_type {
+        left: 0;
+        width: 100%;
+        height: 258vw;
+        margin: 0;
+        background-size: 100% auto;
+    }
+    .main-visual_wrap.img_type .main-visual_inner {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .pc-slogan {
+        display: none;
+    }
+    .m-slogan {
+        display: block;
+    }
+    .pc-drink {
+        display: none;
+    }
+    .m-drink {
+        display: block;
+    }
+    .btn_slogan {
+        position: absolute;
+        bottom: 4%;
+        left: 50% !important;
+        width: 115px;
+        height: 34px;
+        margin-left: -57.5px;
+    }
+    /* 20210208 수정 */
+    .btn_slogan a {
+        font-size: 13px;
+        line-height: 30px;
+    }
+    /* 20210208 수정 */
+    .main-visual_wrap.img_type .btn_slogan {
+        top: auto;
+    }
+    /* 202101 고도화 추가 */
+}
+
+
+/***************************************************************** e::20210118 main_visual **************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+
+/***************************************************************** s::20201224 main_Bean ***************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+
+/* 202101 고도화 정리 (유지:CSS) */
+
+#main-bean_wrap {
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.main-bean_inner {
+    position: relative;
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#main-bean_wrap.img_type {
+    position: relative;
+    left: 50%;
+    top: 0;
+    width: 2000px;
+    height: 572px;
+    margin-left: -1000px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* 202101 고도화 추가 kjy */
+
+#main-bean_wrap.img_type .main-bean_inner {
+    height: 572px;
+}
+
+
+/* 202101 고도화 추가 kjy */
+
+#main-bean_wrap.img_type .btn_bean_detail {
+    position: absolute;
+    left: 48%;
+    bottom: 26%;
+    margin: 0;
+}
+
+
+/* 202101 고도화 추가 kjy */
+
+.bean_img_box,
+.bean_txt_box {
+    position: absolute;
+}
+
+.bean_img_box img,
+.bean_txt_box img {
+    width: 100%;
+}
+
+.m-bean,
+.m-bean-txt {
+    display: none;
+}
+
+.btn_bean_detail {
+    width: 125px;
+    height: 38px;
+    z-index: 6;
+}
+
+.btn_bean_detail a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#main-bean_wrap.img_type .btn_bean_detail a {
+    color: #231815;
+    border: 2px solid #231815;
+    transition: background-color 0.7s, color 0.7s;
+    -webkit-transition: background-color 0.7s, color 0.7s;
+}
+
+#main-bean_wrap.img_type .btn_bean_detail a:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+@media all and (max-width: 1130px) {
+    #main-bean_wrap.img_type {
+        height: 53vw;
+        width: 1500px;
+        margin-left: -750px;
+    }
+    /* 202101 고도화 추가 kjy */
+    #main-bean_wrap.img_type .main-bean_inner {
+        height: 100%;
+    }
+    /* 202101 고도화 추가 kjy */
+}
+
+@media all and (min-width: 641px) and (max-width: 960px) {
+    #main-bean_wrap.img_type {
+        width: 1000px;
+        margin-left: -500px;
+    }
+    /* 202101 고도화 추가 kjy */
+}
+
+@media all and (max-width: 640px) {
+    .pc-bean,
+    .pc-bean-txt {
+        display: none;
+    }
+    .m-bean,
+    .m-bean-txt {
+        display: block;
+    }
+    .main-bean_inner {
+        max-width: none;
+    }
+    .btn_bean_detail {
+        width: 115px;
+        height: 34px;
+    }
+    /* 20210208 수정 */
+    .btn_bean_detail a {
+        font-size: 13px;
+        line-height: 30px;
+    }
+    /* 20210208 수정 */
+    #main-bean_wrap.img_type {
+        left: 0;
+        width: 100%;
+        height: 170vw;
+        background-size: 100% auto;
+        background-position: top;
+        margin: 0;
+    }
+    /* 202101 고도화 추가 kjy */
+    #main-bean_wrap.img_type .btn_bean_detail {
+        bottom: 10%;
+        left: 50%;
+        margin-left: -60px;
+    }
+    /* 202101 고도화 추가 kjy */
+}
+
+
+/***************************************************************** e::20201224 main_Bean ****************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+
+/***************************************************************** s::20201015 main_reserve *************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+
+/* 202101 고도화 정리 (유지:CSS) */
+
+.reserve_inner {
+    position: relative;
+}
+
+.reserve_inner:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.reserve_wrap.img_type {
+    height: 400px;
+}
+
+
+/* 202101 고도화 추가 kjy */
+
+.reserve_wrap.img_type .reserve_inner {
+    max-width: initial;
+    left: 0;
+}
+
+
+/* 202101 고도화 추가 kjy */
+
+.reserve_wrap.img_type .reserve_visual {
+    position: relative;
+    opacity: 1 !important;
+    width: 2000px;
+    left: 50%;
+    margin-left: -1000px;
+}
+
+
+/* 202101 고도화 추가 kjy */
+
+.reserve_wrap.img_type .reserve_visual img {
+    width: 100%;
+}
+
+
+/* 202101 고도화 추가 kjy */
+
+.reserve_title img,
+.reserve_visual img {
+    width: 100%;
+}
+
+.reserve_title {
+    position: relative;
+}
+
+.reserve_visual-m {
+    display: none;
+}
+
+.reserve_detail-btn {
+    width: 125px;
+    height: 38px;
+}
+
+
+/* 20210208 수정 */
+
+.reserve_detail-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 34px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* 20201222 수정 */
+
+.reserve_wrap.img_type .reserve_detail-btn {
+    position: absolute;
+    bottom: 26%;
+    left: 34.5%;
+    z-index: 6;
+}
+
+.reserve_wrap.img_type .reserve_detail-btn a {
+    border: 2px solid #241917;
+    color: #231918;
+    transition: background-color 0.7s, color 0.7s, border-color 0.7s;
+    -webkit-transition: background-color 0.7s, color 0.7s, border-color 0.7s;
+}
+
+.reserve_wrap.img_type .reserve_detail-btn a:hover {
+    color: #fff;
+    background-color: #241917;
+}
+
+@media screen and (min-width: 931px) and (max-width: 1099px) {
+    .reserve_wrap.img_type {
+        height: 300px;
+    }
+    .reserve_wrap.img_type .reserve_visual {
+        height: 300px;
+        width: 1500px;
+        margin-left: -750px;
+    }
+    /* 202101 고도화 추가 */
+    .reserve_wrap.img_type .reserve_detail-btn {
+        left: 28%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .reserve_visual-pc {
+        display: none;
+    }
+    .reserve_visual-m {
+        display: block;
+    }
+    .reserve_title {
+        display: none !important;
+    }
+    .reserve_visual {
+        position: relative !important;
+    }
+    .reserve_wrap.img_type {
+        height: auto;
+    }
+    .reserve_wrap.img_type .reserve_visual {
+        left: 0;
+        width: 100%;
+        margin: 0;
+    }
+    .reserve_wrap.img_type .reserve_detail-btn {
+        bottom: 8%;
+        left: 50%;
+        margin-left: -62.5px;
+    }
+}
+
+
+/******************************************************** e::20201015 main_reserve *************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+
+/* 20201125 main_favorite img 영역 */
+
+
+/* 202101 고도화 정리 (유지:CSS) */
+
+.fav_img {
+    position: absolute;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 7;
+}
+
+
+/* 202101 고도화 추가 */
+
+#favWrap .wrap_inner {
+    bottom: 0;
+}
+
+
+/* 202101 고도화 추가 */
+
+#favWrap.img_type {
+    background-attachment: local;
+}
+
+
+/* 202101 고도화 추가 */
+
+.btn_fav_prod {
+    width: 125px;
+    height: 38px;
+    border-width: 0;
+}
+
+
+/* 20210208 수정 */
+
+.btn_fav_prod a {
+    font-size: 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* 20210208 수정 */
+
+.btn_fav_prod a:hover {
+    font-weight: normal;
+}
+
+
+/* 20210208 수정 */
+
+#favWrap.img_type .btn_fav_prod {
+    top: auto;
+    bottom: 18%;
+    opacity: 1 !important;
+}
+
+
+/* 202101 고도화 추가 */
+
+@media screen and (min-width: 961px) and (max-width: 1104px) {
+    #favWrap.img_type .btn_fav_prod {
+        left: 26%;
+    }
+    /* 202101 고도화 추가 */
+}
+
+@media screen and (max-width: 1024px) {
+    #favWrap.img_type {
+        height: 710px;
+    }
+    /* 202101 고도화 추가 */
+}
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+    #favWrap.img_type .btn_fav_prod {
+        top: auto;
+        bottom: 8%;
+    }
+    /* 202101 고도화 추가 */
+    #favWrap.img_type {
+        height: 1130px;
+    }
+}
