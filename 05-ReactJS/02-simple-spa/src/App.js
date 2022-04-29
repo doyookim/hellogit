@@ -32,7 +32,9 @@ function App() {
         {/* 첫 페이지로 사용되는 컴포넌트는 path에 "/를 권장 */}
         <Route path="/" element={<Home />} exact={true} />
         <Route path="/about" element={<About />} />
-        {/* 서브라우팅 사용 */}
+        {/* 서브라우팅 사용 
+        - 서브라우팅이란?
+          서브 라우트는 라우트 내부에 라우트를 다시 정의 하는 것을 의미.*/}
         <Route path="/main/*" element={<Main />} />
         {/* GET 파라미터 사용 */}
         <Route path="/department_get" element={<DepartmentGet />} />

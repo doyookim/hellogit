@@ -1,0 +1,51 @@
+/** table css */
+.tableCss {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/** table tr */
+.tableCss tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tableCss tr:hover {
+  background-color: #ddd;
+}
+/* 학생목록 변수로 접근 */
+.tableCss th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* 교수목록 th 독립 클래스 적용 */
+:global .th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+/** 학과목록 th의 경우 .my-td, .my-th 다중 클래스 적용 */
+
+.my-td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.my-th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}

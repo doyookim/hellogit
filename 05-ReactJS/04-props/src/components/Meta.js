@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import sample from "../assets/img/sample.png";
 
 const Meta = (props) => {
   return (

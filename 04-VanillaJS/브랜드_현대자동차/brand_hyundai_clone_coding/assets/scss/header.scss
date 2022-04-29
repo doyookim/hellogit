@@ -144,3 +144,43 @@
     }
   }
 }
+
+.gnbSubArea {
+  display: none;
+  border-top: 2px solid #e4dcd3;
+  position: absolute;
+  top: 71px;
+  left: 0;
+  width: 100%;
+
+  .dep2Wrap {
+    position: relative;
+    width: 1120px;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+    box-sizing: content-box;
+    padding: 12px 0 13px;
+    text-align: center;
+
+    .depSub {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 80px;
+
+      .depSub_a .dep2_a {
+        text-decoration: none;
+        display: block;
+        padding: 12px 0 13px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        color: #666;
+      }
+    }
+  }
+}
+
+#intro:hover + #gnbSubArea {
+  display: block;
+}

@@ -9,9 +9,9 @@ import MySubComponent from "./MySubComponent";
  */
 
 const MyComponent1 = () => {
-  // 리컨은 항상 HTML구조를 의미하는 JSX 문법이여야 하고,
+  // 리턴은 항상 HTML구조를 의미하는 JSX 문법이여야 하고,
   //JSX 구조는 무조건 단 하나의 태그요소만 반환해야함.
-  // --> 복잡한 구조는 부모 요소 하나에 모두 포함되어야 한다는 의믜
+  // --> 복잡한 구조는 부모 요소 하나에 모두 포함되어야 한다는 의미
   return (
     <div>
       <h2>안녕하세요 리액트</h2>

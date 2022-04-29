@@ -1,11 +1,13 @@
 import React from "react";
 import myschool from "../myschool";
 import StudentItem from "../components/StudentItem";
+
+import myStyle from "../assets/css/myschool.module.css";
 const Student = () => {
   const { student } = myschool;
   return (
     <div>
-      <table border="1">
+      <table className={myStyle.tableCss}>
         <thead>
           <tr>
             <th>학생번호</th>
