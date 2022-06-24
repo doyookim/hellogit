@@ -1,0 +1,148 @@
+@import "./font.css";
+
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+table,
+td,
+textarea,
+th,
+ul,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 11px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+ol,
+ul {
+  list-style: none;
+}
+address {
+  font-style: normal;
+  font-weight: 400;
+}
+hr {
+  display: none;
+}
+fieldset {
+  border: 0;
+}
+legend {
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  box-sizing: border-box;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 4px 0 0;
+  line-height: normal;
+}
+[role="button"] {
+  cursor: pointer;
+}
+.sr_only {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table caption {
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+/*! layout */
+body {
+  color: #483834;
+  font-size: 13px;
+  font-family: "Nanum Barun Gothic", "나눔고딕", "NanumGothic", "돋움", "Dotum",
+    sans-serif;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+}
+a {
+  color: #483834;
+}
+:hover,
+:focus {
+  outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2f231c;
+}
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+select {
+  width: 100%;
+  height: 32px;
+  padding: 8px 1px 8px 10px;
+  border: 0;
+  background: #efefef;
+  font-size: 13px;
+  line-height: 16px;
+  box-sizing: border-box;
+}
+select {
+  padding: 0 1px 0 10px;
+  background: #fff;
+  line-height: normal;
+}
+select::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}

@@ -1,0 +1,143 @@
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.member {
+  float: left;
+
+  ul:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+  li {
+    float: left;
+  }
+
+  .login a {
+    float: left;
+    display: block;
+    padding: 0 23px;
+    padding-left: 0;
+
+    span {
+      width: 35px;
+      display: block;
+      height: 46px;
+      text-indent: -9999em;
+    }
+  }
+
+  .join span {
+    width: 27px;
+    display: block;
+    height: 46px;
+    text-indent: -9999em;
+  }
+}
+
+.gnb {
+  float: right;
+
+  ul li {
+    float: left;
+  }
+}
+
+.gnbMain a {
+  display: block;
+  padding: 0 50px;
+}
+
+.gnbFlavor .gnbMain a {
+  padding-left: 0;
+}
+
+.gnbFlavor .gnbMain span {
+  width: 164px;
+}
+
+.gnbMain span {
+  display: block;
+  height: 46px;
+  text-indent: -9999em;
+  line-height: 46px;
+}
+
+.gnbSub {
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 0;
+  z-index: 1000;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+
+  li {
+    padding-bottom: 12px;
+  }
+
+  li:first-child {
+    padding-top: 40px;
+  }
+  a {
+    display: block;
+    color: #7b7b7b;
+    line-height: 1.2;
+    padding: 5px 0;
+  }
+}
+
+.gnbFlavor .gnbSub {
+  padding-top: 2px;
+
+  a {
+    padding: 0;
+
+    img {
+      margin-left: 37px;
+    }
+  }
+}
+
+.gnbMenu .gnbSub {
+  margin-left: 35px;
+}
+.gnb_nutrition .gnb_sub {
+  margin-left: 50px;
+}
+.gnb_event .gnb_sub {
+  margin-left: 43px;
+}
+.gnb_store .gnb_sub {
+  margin-left: 57px;
+}
+.gnb_about .gnb_sub {
+  text-align: right;
+  margin-left: 0;
+  width: 100%;
+  padding-left: 30px;
+}
+
+.gnbBg {
+  overflow: hidden;
+  position: absolute;
+  top: 165px;
+  left: 0;
+  height: 0;
+  z-index: 999;
+  min-width: 100%;
+  border-bottom: 1px solid #693337;
+  background: #fff;
+
+  div {
+    width: 1200px;
+    height: 204px;
+    margin: 0 auto;
+    background: url(../img/img_happypoint_app.jpg) no-repeat 0 65px;
+  }
+}

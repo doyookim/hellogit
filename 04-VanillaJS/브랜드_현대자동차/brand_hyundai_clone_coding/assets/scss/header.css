@@ -301,7 +301,7 @@ table {
   color: #666;
 }
 
-#intro:hover + #gnbSubArea {
+#dropdownBtn:hover .gnbSubArea {
   display: block;
 }
 /*# sourceMappingURL=header.css.map */

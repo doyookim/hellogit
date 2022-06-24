@@ -1,0 +1,71 @@
+.gnbUl {
+  position: relative;
+  float: left;
+  li {
+    position: relative;
+    float: left;
+    padding-bottom: 12px;
+  }
+}
+
+.MenuWrap {
+  font-size: 14px;
+  font-weight: 300;
+
+  ul {
+    float: left;
+    display: block;
+    text-align: center;
+
+    li {
+      padding-bottom: 12px;
+    }
+
+    li a {
+      display: block;
+
+      a {
+        padding: 5px 0;
+      }
+      span {
+        color: #7b7b7b;
+        line-height: 1.2;
+        &:hover {
+          color: #e01883;
+        }
+      }
+    }
+
+    li:first-child {
+      padding-top: 40px;
+    }
+  }
+}
+
+.gnbBg {
+  position: relative;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.fgnbSub {
+  position: relative;
+}
+
+.Menusub {
+  margin-left: 50px;
+}
+
+.NutritionSub {
+  margin-left: 90px;
+}
+
+.Eventsub {
+  margin-left: 110px;
+}
+.Storesub {
+  margin-left: 80px;
+}
+.Aboutsub {
+  margin-left: 90px;
+}

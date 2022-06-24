@@ -1,0 +1,9 @@
+btn_family.off {
+  background-color: transparent;
+  background: transparent url(../img/family_size_off.png) no-repeat 100% 0;
+}
+
+btn_family.on {
+  background-color: transparent;
+  background: transparent url(../img/family_size_on.png) no-repeat 100% 0;
+}

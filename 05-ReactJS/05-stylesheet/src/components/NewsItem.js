@@ -84,9 +84,7 @@ const ListItem = styled.li`
   }
 `;
 
-const NewsItem = ({
-  item: { author, title, description, url, image, datetime },
-}) => {
+const NewsItem = ({item: { author, title, description, url, image, datetime },}) => {
   console.group("News Item");
   console.debug(`author: ${author}`);
   console.debug(`title: ${title}`);
