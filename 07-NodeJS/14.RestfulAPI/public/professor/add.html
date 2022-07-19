@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학과관리 ::: MySchool</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div data-include="/inc/header.html"></div>
+    <div class="container">
+        <div class="page-header">
+            <h1>교수추가</h1>
+        </div>
+        <form name="form" id="department-form" class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="name"> <span class="text-danger">*</span> 교수이름 </label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="name" id="name" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="urerid"> 아이디</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="urerid" id="urerid" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="position"> 직급</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="position" id="position" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="sal"> 급여</label>
+                <div class="col-md-10">
+                    <input type="number" class="form-control" name="sal" id="sal" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="hiredate"> 입사일</label>
+                <div class="col-md-10">
+                    <input type="date" class="form-control" name="hiredate" id="hiredate" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="comm"> 수당</label>
+                <div class="col-md-10">
+                    <input type="number" class="form-control" name="comm" id="comm" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="deptno"> 학과번호</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="deptno" id="deptno" />
+                </div>
+            </div>
+            <hr />
+            <div class='text-center'>
+                <button type='submit' class='btn btn-primary'>저장하기</button>
+                <button type='reset' class='btn btn-warning'>다시작성</button>
+            </div>
+        </form>
+    </div>
+    <div data-include="/inc/footer.html"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/assets/js/include.js"></script>
+    <script>
+        document.querySelector("#department-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            // 입력값 받아오기
+            const name = document.querySelector("#name").value;
+            const urerid = document.querySelector("#urerid").value;
+            const position = document.querySelector("#position").value;
+            const sal = document.querySelector("#sal").value;
+            const hiredate = document.querySelector("#hiredate").value;
+            const comm = document.querySelector("#comm").value;
+            const deptno = document.querySelector("#deptno").value;
+
+            // 입력값에 대한 유효성 검사 진행.... (이 예제에서는 생략)
+
+            let json = null;
+
+            try {
+                const response = await axios.post('/professor', {
+                    name: dname,
+                    urerid: urerid,
+                    position: position,
+                    sal: sal,
+                    hiredate: hiredate,
+                    comm: comm,
+                    deptno: deptno
+                });
+
+                json = response.data;
+            } catch (e) {
+                alert(e.reponse.data.rtmsg);
+                return;
+            }
+
+            if (json != null) {
+                // 새로 생성된 데이터의 PK를 상세페이지로 전달하여 저장결과를 확인해야 한다.
+                window.location = "/professor/view.html?profno=" + json.item[0].profno;
+            }
+        });
+    </script>
+</body>
+
+</html>

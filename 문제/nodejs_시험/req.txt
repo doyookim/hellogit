@@ -1,0 +1,40 @@
+### ProfessorMapper.xml
+
+```xml
+
+<!--
+@filename    : ProfessorMapper.xml
+@author      : 김도유 (howdoyoodoit@gmail.com)
+@description : 교수 SQL문
+-->
+
+```
+
+
+### ProfessorService.js
+
+```js
+/**
+ * @FileName : ProfessorService.js
+ * @Description : 교수 service layer
+ * @Author : 김도유 (howdoyoodoit@gmail.com)
+ */
+
+
+```
+
+
+### ProfessorController.js
+
+```js
+/**
+ * @FileName : ProfessorController.js
+ * @Description : 교수 controller
+ * @Author : 김도유 (howdoyoodoit@gmail.com)
+ */
+
+
+```
+
+> 결과출력
+> ![insomnia]() > ![terminal]()

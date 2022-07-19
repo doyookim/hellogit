@@ -1,0 +1,222 @@
+22/07/14 00:01:20 941 [debug]: -------------------------------------------------------------
+22/07/14 00:01:20 944 [debug]: |               Start Express Server                         |
+22/07/14 00:01:20 944 [debug]: -------------------------------------------------------------
+22/07/14 00:01:20 945 [debug]: server adredd => http://192.168.200.174:3001
+22/07/14 00:01:20 946 [debug]: -------------------------------------------------------------
+22/07/14 00:01:28 859 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:01:28 860 [debug]: [client] ::ffff:192.168.200.174 / Windows 10.0 / Chrome / 103.0.0.0 / Microsoft Windows
+22/07/14 00:02:25 037 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:02:25 038 [debug]: [client] ::ffff:192.168.200.174 / Windows 10.0 / Chrome / 103.0.0.0 / Microsoft Windows
+22/07/14 00:02:26 257 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:02:26 257 [debug]: [client] ::ffff:192.168.200.174 / Windows 10.0 / Chrome / 103.0.0.0 / Microsoft Windows
+22/07/14 00:02:39 972 [debug]: -------------------------------------------------------------
+22/07/14 00:02:39 974 [debug]: |               Start Express Server                         |
+22/07/14 00:02:39 975 [debug]: -------------------------------------------------------------
+22/07/14 00:02:39 975 [debug]: -------------------------------------------------------------
+22/07/14 00:02:42 764 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:02:42 766 [debug]: [client] ::ffff:192.168.200.174 / Windows 10.0 / Chrome / 103.0.0.0 / Microsoft Windows
+22/07/14 00:02:42 766 [debug]: [GET] http://undefined/
+22/07/14 00:02:42 776 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/14 00:02:42 776 [debug]: ------------------------------------------------------------
+22/07/14 00:07:08 454 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:07:08 455 [debug]: [client] ::ffff:192.168.200.174 / Windows 10.0 / Chrome / 103.0.0.0 / Microsoft Windows
+22/07/14 00:07:08 456 [debug]: [GET] http://undefined/
+22/07/14 00:07:08 460 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/14 00:07:08 461 [debug]: ------------------------------------------------------------
+22/07/14 00:07:13 248 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:07:13 249 [debug]: [client] ::ffff:192.168.200.174 / Windows 10.0 / Chrome / 103.0.0.0 / Microsoft Windows
+22/07/14 00:07:13 250 [debug]: [GET] http://undefined/
+22/07/14 00:07:13 254 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/14 00:07:13 254 [debug]: ------------------------------------------------------------
+22/07/14 00:07:21 000 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:07:21 001 [debug]: [client] ::ffff:192.168.200.174 / Windows 10.0 / Chrome / 103.0.0.0 / Microsoft Windows
+22/07/14 00:07:21 002 [debug]: [GET] http://undefined/
+22/07/14 00:07:21 005 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/14 00:07:21 006 [debug]: ------------------------------------------------------------
+22/07/14 00:07:36 729 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:07:36 729 [debug]: [client] ::ffff:192.168.200.174 / Windows 10.0 / Chrome / 103.0.0.0 / Microsoft Windows
+22/07/14 00:07:36 729 [debug]: [GET] http://undefined/
+22/07/14 00:07:36 732 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/14 00:07:36 733 [debug]: ------------------------------------------------------------
+22/07/14 00:09:45 494 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:09:45 495 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:09:45 495 [debug]: [PUT] http://undefined/
+22/07/14 00:09:45 513 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 18ms
+22/07/14 00:09:45 514 [debug]: ------------------------------------------------------------
+22/07/14 00:09:45 592 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:09:45 593 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:09:45 593 [debug]: [PUT] http://undefined/
+22/07/14 00:09:45 595 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/14 00:09:45 595 [debug]: ------------------------------------------------------------
+22/07/14 00:09:46 391 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:09:46 391 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:09:46 392 [debug]: [PUT] http://undefined/
+22/07/14 00:09:46 394 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/14 00:09:46 395 [debug]: ------------------------------------------------------------
+22/07/14 00:09:57 772 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:09:57 772 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:09:57 773 [debug]: [GET] http://undefined/
+22/07/14 00:09:57 776 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/14 00:09:57 777 [debug]: ------------------------------------------------------------
+22/07/14 00:10:20 207 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:10:20 207 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:10:20 208 [debug]: [GET] http://undefined/
+22/07/14 00:10:20 209 [debug]: [cookies]my_msg_signed=
+22/07/14 00:10:20 210 [debug]: [cookies]my_msg=
+22/07/14 00:10:20 210 [debug]: [signedCookies]connect.sid=6Kelb9iJJnWbSUKz-w_yk5f69YNhDdhv
+22/07/14 00:10:20 211 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/14 00:10:20 212 [debug]: ------------------------------------------------------------
+22/07/14 00:11:49 786 [debug]: -------------------------------------------------------------
+22/07/14 00:11:49 788 [debug]: |               Start Express Server                         |
+22/07/14 00:11:49 789 [debug]: -------------------------------------------------------------
+22/07/14 00:11:49 789 [debug]: -------------------------------------------------------------
+22/07/14 00:11:51 107 [debug]: -------------------------------------------------------------
+22/07/14 00:11:51 110 [debug]: |               Start Express Server                         |
+22/07/14 00:11:51 111 [debug]: -------------------------------------------------------------
+22/07/14 00:11:51 111 [debug]: -------------------------------------------------------------
+22/07/14 00:11:53 793 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:11:53 794 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:11:53 795 [debug]: [GET] http://undefined/
+22/07/14 00:11:53 818 [debug]: [cookies]my_msg_signed=
+22/07/14 00:11:53 819 [debug]: [cookies]my_msg=
+22/07/14 00:11:53 820 [debug]: [signedCookies]connect.sid=6Kelb9iJJnWbSUKz-w_yk5f69YNhDdhv
+22/07/14 00:11:53 823 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+22/07/14 00:11:53 824 [debug]: ------------------------------------------------------------
+22/07/14 00:11:54 536 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:11:54 537 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:11:54 537 [debug]: [GET] http://undefined/
+22/07/14 00:11:54 540 [debug]: [cookies]my_msg_signed=
+22/07/14 00:11:54 540 [debug]: [cookies]my_msg=
+22/07/14 00:11:54 541 [debug]: [signedCookies]connect.sid=6Kelb9iJJnWbSUKz-w_yk5f69YNhDdhv
+22/07/14 00:11:54 543 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/14 00:11:54 543 [debug]: ------------------------------------------------------------
+22/07/14 00:12:07 582 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:12:07 583 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:12:07 584 [debug]: [POST] http://undefined/
+22/07/14 00:12:07 587 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/14 00:12:07 587 [debug]: ------------------------------------------------------------
+22/07/14 00:14:41 474 [debug]: -------------------------------------------------------------
+22/07/14 00:14:41 476 [debug]: |               Start Express Server                         |
+22/07/14 00:14:41 477 [debug]: -------------------------------------------------------------
+22/07/14 00:14:41 478 [debug]: -------------------------------------------------------------
+22/07/14 00:14:44 077 [debug]: -------------------------------------------------------------
+22/07/14 00:14:44 080 [debug]: |               Start Express Server                         |
+22/07/14 00:14:44 080 [debug]: -------------------------------------------------------------
+22/07/14 00:14:44 081 [debug]: -------------------------------------------------------------
+22/07/14 00:44:12 503 [debug]: -------------------------------------------------------------
+22/07/14 00:44:12 505 [debug]: |               Start Express Server                         |
+22/07/14 00:44:12 506 [debug]: -------------------------------------------------------------
+22/07/14 00:44:12 506 [debug]: -------------------------------------------------------------
+22/07/14 00:46:43 194 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:46:43 195 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:46:43 196 [debug]: [POST] http://undefined/
+22/07/14 00:46:43 224 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+22/07/14 00:46:43 224 [debug]: ------------------------------------------------------------
+22/07/14 00:46:44 888 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:46:44 888 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:46:44 889 [debug]: [POST] http://undefined/
+22/07/14 00:46:44 893 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/14 00:46:44 893 [debug]: ------------------------------------------------------------
+22/07/14 00:46:47 228 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:46:47 229 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:46:47 229 [debug]: [GET] http://undefined/
+22/07/14 00:46:47 232 [debug]: [cookies]my_msg=undefined
+22/07/14 00:46:47 233 [debug]: [signedCookies]my_msg_signed=undefined
+22/07/14 00:46:47 233 [debug]: [signedCookies]connect.sid=6Kelb9iJJnWbSUKz-w_yk5f69YNhDdhv
+22/07/14 00:46:47 236 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/14 00:46:47 237 [debug]: ------------------------------------------------------------
+22/07/14 00:46:50 753 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:46:50 754 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:46:50 754 [debug]: [DELETE] http://undefined/
+22/07/14 00:46:50 757 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/14 00:46:50 757 [debug]: ------------------------------------------------------------
+22/07/14 00:46:52 819 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:46:52 819 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:46:52 820 [debug]: [POST] http://undefined/
+22/07/14 00:46:52 823 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/14 00:46:52 824 [debug]: ------------------------------------------------------------
+22/07/14 00:46:55 788 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:46:55 788 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:46:55 789 [debug]: [GET] http://undefined/
+22/07/14 00:46:55 791 [debug]: [session] =[object Object]
+22/07/14 00:46:55 791 [debug]: [session] =dy
+22/07/14 00:46:55 791 [debug]: [session] =uu
+22/07/14 00:46:55 793 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/14 00:46:55 793 [debug]: ------------------------------------------------------------
+22/07/14 00:47:01 019 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:47:01 020 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:47:01 020 [debug]: [DELETE] http://undefined/
+22/07/14 00:47:01 023 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/14 00:47:01 023 [debug]: ------------------------------------------------------------
+22/07/14 00:47:03 985 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:51:49 502 [debug]: -------------------------------------------------------------
+22/07/14 00:51:49 506 [debug]: |               Start Express Server                         |
+22/07/14 00:51:49 507 [debug]: -------------------------------------------------------------
+22/07/14 00:51:49 507 [debug]: -------------------------------------------------------------
+22/07/14 00:51:52 515 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:51:52 517 [debug]: [client] ::1 / Windows 10.0 / Chrome / 103.0.0.0 / Microsoft Windows
+22/07/14 00:51:52 518 [debug]: [GET] http://undefined/
+22/07/14 00:51:52 524 [error]: [Error] 개발자가 직접 생성한 에러가 발생하였습니다.
+22/07/14 00:51:52 524 [error]: Error: 개발자가 직접 생성한 에러가 발생하였습니다.
+    at file:///C:/Users/doyoo/studynote/07-NodeJS/12-Route/controllers/ApiTest.js:13:15
+    at Layer.handle [as handle_request] (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:47:12)
+22/07/14 00:51:52 533 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
+22/07/14 00:51:52 534 [debug]: ------------------------------------------------------------
+22/07/14 00:51:52 626 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:51:52 627 [debug]: [client] ::1 / Windows 10.0 / Chrome / 103.0.0.0 / Microsoft Windows
+22/07/14 00:51:52 629 [debug]: [GET] http://undefined/
+22/07/14 00:51:52 638 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/14 00:51:52 638 [debug]: ------------------------------------------------------------
+22/07/14 00:52:03 315 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:52:03 316 [debug]: [client] ::1 / Windows 10.0 / Chrome / 103.0.0.0 / Microsoft Windows
+22/07/14 00:52:03 316 [debug]: [GET] http://undefined/
+22/07/14 00:52:03 320 [debug]: [HTTP %s Params] %s=%s
+22/07/14 00:52:03 321 [debug]: [HTTP %s Params] %s=%s
+22/07/14 00:52:03 322 [error]: [Error] num1의 값이 없습니다.
+22/07/14 00:52:03 323 [error]: Error: num1의 값이 없습니다.
+    at RegexHelper.value (file:///C:/Users/doyoo/studynote/07-NodeJS/12-Route/helper/RegexHelper.js:16:19)
+    at file:///C:/Users/doyoo/studynote/07-NodeJS/12-Route/controllers/ApiTest.js:31:19
+    at Layer.handle [as handle_request] (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:175:3)
+22/07/14 00:52:03 325 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/07/14 00:52:03 326 [debug]: ------------------------------------------------------------
+22/07/14 00:52:32 671 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:52:32 671 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:52:32 672 [debug]: [GET] http://undefined/
+22/07/14 00:52:32 676 [debug]: [HTTP %s Params] %s=%s
+22/07/14 00:52:32 676 [debug]: [HTTP %s Params] %s=%s
+22/07/14 00:52:32 677 [error]: [Error] num1의 값이 없습니다.
+22/07/14 00:52:32 678 [error]: Error: num1의 값이 없습니다.
+    at RegexHelper.value (file:///C:/Users/doyoo/studynote/07-NodeJS/12-Route/helper/RegexHelper.js:16:19)
+    at file:///C:/Users/doyoo/studynote/07-NodeJS/12-Route/controllers/ApiTest.js:31:19
+    at Layer.handle [as handle_request] (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\doyoo\studynote\07-NodeJS\12-Route\node_modules\express\lib\router\index.js:175:3)
+22/07/14 00:52:32 681 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/14 00:52:32 681 [debug]: ------------------------------------------------------------
+22/07/14 00:52:54 405 [debug]: 클라이언트가 접속했습니다.
+22/07/14 00:52:54 405 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / 2022.4.2 / unknown
+22/07/14 00:52:54 406 [debug]: [GET] http://undefined/
+22/07/14 00:52:54 408 [debug]: [HTTP %s Params] %s=%s
+22/07/14 00:52:54 408 [debug]: [HTTP %s Params] %s=%s
+22/07/14 00:52:54 410 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/14 00:52:54 410 [debug]: ------------------------------------------------------------
